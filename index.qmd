@@ -1,0 +1,27 @@
+---
+title: "Final Project: Data Ethics and Policy"
+authors:
+  - name: Christy Hsu
+    affiliation: Georgetown University
+    roles: writing
+    corresponding: true
+df-print: kable
+bibliography: references.bib
+title-block-banner: '#E5DCC8'
+title-block-banner-color: "black"
+format:
+  html:
+    df-print: kable
+    # embed-resources: true
+  pdf:
+    link-citations: true
+prefer-html: true
+---
+
+## Introduction
+
+This is a simple placeholder for the manuscript's main document [@knuth84].
+
+![](image/stouffer-cover.png)
+
+

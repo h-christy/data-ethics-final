@@ -1,0 +1,22 @@
+project:
+  type: manuscript
+  output-dir: doc
+manuscript:
+  article: index.qmd
+
+format:
+  html:
+    df-print: kable
+    comments:
+      hypothesis: true
+  pdf: default
+  jats: default
+
+  # (other formats)
+  # pdf: default
+
+execute:
+  freeze: true
+
+
+
