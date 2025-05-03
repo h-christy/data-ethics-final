@@ -18,14 +18,42 @@ format:
 prefer-html: true
 ---
 
+## Abstract
+
 ## Introduction
 
-This is a simple placeholder for the manuscript's main document [@knuth84].
-
-![](image/stouffer-cover.png)
+![](image/stouffer-cover.png){width=50%}
 
 1954 Survey[@stoufferCommunismConformityCivil1992]
 
+### Why are we still discussing Tolerance
+
+The state can't implement toleration if there are no significant presence of tolerance in the community.^[not to mention when the state itseld is persecuting and demonstrating intolerance, how can they expect the community to own that quality]
+
+The term toleration is an idea of negative liberty, and involves elements of judgement^[bbc]
+
+The logic of toleration is outdated and can be seen as offensive, however, it is still operating. We would find rethinking the idea of toleration a fruitful journey. People can be driven by complicated motives and reasons to tolerate.^[@alfredstepanBoundariesToleration2014, pp.3-4, we understanding of the argument for how essential is it for us to understand 'concept and practice of toleration' in short is that the word today, 2014? there are still situations that we need law, policy and education at least restrain constitutional intoleration and intolerance in society]
+
+
 ## Literature Review
 
+### Data Ethics
+
+The Mismeasure of Man[@MismeasureMan]
+
+### Context of the discussion of Tolerance
+
+
+## Data and Methods
+
+### Data
+
+### Context of the 1954 Survey
+
+The public tends to be suspiscious or tends to forgive Wittaker Chambers and Alger Hiss, based on their "social quality", to infer [@judtReappraisalsReflectionsForgotten2008, p.303]
+
+
+## Results
+
+## Policy Recommendation
 
