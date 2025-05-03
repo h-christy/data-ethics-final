@@ -6,7 +6,7 @@ authors:
     roles: writing
     corresponding: true
 df-print: kable
-bibliography: references.bib
+bibliography: project.bib
 title-block-banner: '#E5DCC8'
 title-block-banner-color: "black"
 format:
@@ -23,5 +23,9 @@ prefer-html: true
 This is a simple placeholder for the manuscript's main document [@knuth84].
 
 ![](image/stouffer-cover.png)
+
+1954 Survey[@stoufferCommunismConformityCivil1992]
+
+## Literature Review
 
 
