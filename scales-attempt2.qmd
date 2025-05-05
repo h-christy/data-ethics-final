@@ -1,0 +1,56 @@
+---
+title: "Scaling Tolerance and Fear"
+---
+
+### Reproducing Stouffer's result
+
+#### using forward evaluations of items `group0` to `group5`
+
+```{.r}
+> public_group_tb
+# A tibble: 3 × 3
+  broad_group       n   pct
+  <chr>         <int> <dbl>
+1 in-between     2289  46.4
+2 less tolerant   748  15.2
+3 more tolerant  1896  38.4
+> lead_group_tb
+# A tibble: 3 × 3
+  broad_group       n   pct
+  <chr>         <int> <dbl>
+1 in-between      392 26.1 
+2 less tolerant    59  3.93
+3 more tolerant  1049 69.9 
+```
+
+#### using backward: `tolerance5` to `tolerance0`
+
+```{.r}
+> code_df |> filter(leader == 1) |> count(tolerance_broader) |> mutate(pct = (n / sum(n)) * 100)
+# A tibble: 3 × 3
+  tolerance_broader     n   pct
+  <chr>             <int> <dbl>
+1 in-between          411  27.4
+2 less tolerant       261  17.4
+3 more tolerant       828  55.2
+```
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+code_df |> filter(leader == 1) |> filter(((v100 == 1) + (v101 == 5) + (v102 == 5) >= 2))
+```
+
+```{r}
+code_df |> filter(leader == 1) |> filter(!((v100 == 1) + (v101 == 5) + (v102 == 5) >= 2)) |> filter(((v104 == 5) + (v32 == 1) + (v34 == 5) >= 2))
+```
+
+```{r}
+code_df |> filter(leader == 1) |> filter(((v100 == 1) + (v101 == 5) + (v102 == 5) >= 2)) |> filter(((v104 == 5) + (v32 == 1) + (v34 == 5) >= 2)) |> filter(((v112 == 5) + (v35 == 1) + (v37 == 5) >= 2))
+```
+
+```{r}
+code_df |> filter(leader == 1) |> filter(!((v100 == 1) + (v101 == 5) + (v102 == 5) >= 2)) |> filter(((v104 == 5) + (v32 == 1) + (v34 == 5) >= 2))
+```

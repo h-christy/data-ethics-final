@@ -1,1 +1,3 @@
 /.quarto/
+data/converted
+.DS_Store

@@ -8,7 +8,6 @@ authors:
 df-print: kable
 bibliography: project.bib
 title-block-banner: '#E5DCC8'
-title-block-banner-color: "black"
 format:
   html:
     df-print: kable
@@ -19,6 +18,8 @@ prefer-html: true
 ---
 
 ## Abstract
+
+The discussion this project attempts to introduce is not about whether tolerance in society remains meaningful and desirable to maximize, but rather a belief that by examining a past attempt to measure and explain individual tolerance, we can better approach and understand that part of this society’s past.
 
 ## Introduction
 
@@ -43,7 +44,6 @@ The Mismeasure of Man[@MismeasureMan]
 
 ### Context of the discussion of Tolerance
 
-
 ## Data and Methods
 
 ### Data
@@ -52,8 +52,12 @@ The Mismeasure of Man[@MismeasureMan]
 
 The public tends to be suspiscious or tends to forgive Wittaker Chambers and Alger Hiss, based on their "social quality", to infer [@judtReappraisalsReflectionsForgotten2008, p.303]
 
+### Data and Measures: Validility
 
+From the conceptual variable Tolerance to the operationalized definition of tolerance, that maps answers of the respondent to tolerance group that correspond to their degree of tolerance. But is this tolerance scale really measuring people's tolerance or is it measuring something else.[@tesslerSocialScienceResearch2022, pp.43-47]
 ## Results
+
+### 
 
 ## Policy Recommendation
 
