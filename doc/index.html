@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -73,6 +107,7 @@ div.csl-indent {
 <meta name="citation_title" content="Final Project: Data Ethics and Policy">
 <meta name="citation_author" content="Christy Hsu">
 <meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=13. Declaration of Principles on Tolerance (1995);,citation_abstract=(Adopted and proclaimed by&nbsp;Member States of the United Nations Educational, Scientific and Cultural Organization, Paris, France, 16 November 1995) The Member States of the United Nations Educational, Scientific and Cultural Organization, meeting in Paris at the twenty-eighth session of the General Conference, from 25 October to 16 November 1995. [...];,citation_language=en-US;,citation_journal_title=OHCHR;,citation_publisher=https://www.ohchr.org/en/resources/educators/human-rights-education-training/13-declaration-principles-tolerance-1995;">
 <meta name="citation_reference" content="citation_title=1950 Census - Home  1950 Census;,citation_publisher=https://1950census.archives.gov/;">
 <meta name="citation_reference" content="citation_title=Communism, conformity &amp;amp;amp; civil liberties, 1954 [dataset];,citation_author=Fund Republic/Samuel A. Stouffer;,citation_publication_date=1954;,citation_cover_date=1954;,citation_year=1954;">
 <meta name="citation_reference" content="citation_title=Investigation of Un-American Propaganda Activities in the United States: Hearings Before a Special Committee on Un-American Activities, House of Representatives, Seventy-fifth Congress, Third Session-Seventy-eighth Congress, Second Session, on H. Res. 282, to Investigate (l) the Extent, Character, and Objects of Un-American Propaganda Activities in the United States, (2) the Diffusion Within the United States of Subversive and Un-American Propaganda that is Instigated from Foreign Countries Or of a Domestic Origin and Attacks the Principle of the Form of Government as Guaranteed by Our Constitution, and (3) All Other Questions in Relation Thereto that Would Aid Congress in Any Necessary Remedial Legislation;,citation_author=United States Congress House Special Committee on Un-American Activities (1938-1944);,citation_publication_date=1938;,citation_cover_date=1938;,citation_year=1938;,citation_language=en-US;">
@@ -82,14 +117,20 @@ div.csl-indent {
 <meta name="citation_reference" content="citation_title=Stephen Smale: The Mathematician Who Broke the Dimension Barrier: The Mathematician Who Broke the Dimension Barrier;,citation_abstract=In 1957 Stephen Smale startled the mathematical world by showing that, in a theoretical sense, it is possible to turn a sphere inside out. A few years later, from the beaches of Rio, he introduced the horseshoe map, demonstrating that simple functions could have chaotic dynamics. His next stunning mathematical accomplishment was to solve the higher-dimensional Poincare conjecture, thus demonstrating that higher dimensions are simpler than the more familiar three. In 1966 in Moscow, he was awarded the Fields Medal, the most prestigious prize in mathematics. Smale’s vision and influence extended beyond mathematics into two vastly different realms. In 1965 in Berkeley, he initiated a program with Jerry Rubin of civil disobedience directed at ending the Vietnam War. And as a mineral collector, he accumulated a museum-quality collection that ranks among the finest in the world. Despite these diverse accomplishments, Smale’s name is virtually unknown outside mathematics and mineral collecting. One of the objectives of this book is to bring his life and work to the attention of a larger community. There are few good biographies of mathematicians. This makes sense when considering that to place their lives in perspective requires some appreciation of their theorems. Biographical writers are not usually trained in mathematics, and mathematicians do not usually write biographies. Though the author, Steve Batterson, is primarily a mathematician, he has long been intrigued by the notion of working on a biography of Smale. In this book, Batterson records and makes known the life and accomplishments of this great mathematician and significant figure in intellectual history.;,citation_author=Steve Batterson;,citation_publication_date=2012-12;,citation_cover_date=2012-12;,citation_year=2012;,citation_isbn=978-0-8218-2696-6;,citation_language=en-US;">
 <meta name="citation_reference" content="citation_title=Conspiracies and Conspiracy Theories in American History;,citation_abstract=This up-to-date introduction to the complex world of conspiracies and conspiracy theories provides insight into why millions of people are so ready to believe t…;,citation_author=bloomsbury.com;,citation_language=en-US;,citation_journal_title=Bloomsbury;,citation_publisher=https://www.bloomsbury.com/us/conspiracies-and-conspiracy-theories-in-american-history-9781440858109/;">
 <meta name="citation_reference" content="citation_title=Bring ASCII Data into Stata  ROPER CENTER;,citation_abstract=Please note the assumptions that went into the creation of this document: it is assumed the user has access to Stata software and has some basic Stata experience. Also, please note that this procedure is based on Roper Center datasets only and we recommend the use of the Stata “do file” for the best results.;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=The Power of Tolerance: A Debate;,citation_abstract=We invoke the ideal of tolerance in response to conflict, but what does it mean to answer conflict with a call for tolerance? Is tolerance a way of resolving conflicts or a means of sustaining them? Does it transform conflicts into productive tensions, or does it perpetuate underlying power relations? To what extent does tolerance hide its involvement with power and act as a form of depoliticization?Wendy Brown and Rainer Forst debate the uses and misuses of tolerance, an exchange that highlights the fundamental differences in their critical practice despite a number of political similarities. Both scholars address the normative premises, limits, and political implications of various conceptions of tolerance. Brown offers a genealogical critique of contemporary discourses on tolerance in Western liberal societies, focusing on their inherent ties to colonialism and imperialism, and Forst reconstructs an intellectual history of tolerance that attempts to redeem its political virtue in democratic societies. Brown and Forst work from different perspectives and traditions, yet they each remain wary of the subjection and abnegation embodied in toleration discourses, among other issues. The result is a dialogue rich in critical and conceptual reflections on power, justice, discourse, rationality, and identity.;,citation_author=Wendy Brown;,citation_author=Rainer Forst;,citation_publication_date=2014-06;,citation_cover_date=2014-06;,citation_year=2014;,citation_isbn=978-0-231-53796-4;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Regulating Aversion: Tolerance in the Age of Identity and Empire;,citation_abstract=Tolerance is generally regarded as an unqualified achievement of the modern West. Emerging in early modern Europe to defuse violent religious conflict and reduce persecution, tolerance today is hailed as a key to decreasing conflict across a wide range of other dividing lines– cultural, racial, ethnic, and sexual. But, as political theorist Wendy Brown argues in Regulating Aversion, tolerance also has dark and troubling undercurrents. Dislike, disapproval, and regulation lurk at the heart of tolerance. To tolerate is not to affirm but to conditionally allow what is unwanted or deviant. And, although presented as an alternative to violence, tolerance can play a part in justifying violence–dramatically so in the war in Iraq and the War on Terror. Wielded, especially since 9/11, as a way of distinguishing a civilized West from a barbaric Islam, tolerance is paradoxically underwriting Western imperialism. Brown’s analysis of the history and contemporary life of tolerance reveals it in a startlingly unfamiliar guise. Heavy with norms and consolidating the dominance of the powerful, tolerance sustains the abjection of the tolerated and equates the intolerant with the barbaric. Examining the operation of tolerance in contexts as different as the War on Terror, campaigns for gay rights, and the Los Angeles Museum of Tolerance, Brown traces the operation of tolerance in contemporary struggles over identity, citizenship, and civilization.;,citation_author=Wendy Brown;,citation_publication_date=2009-01;,citation_cover_date=2009-01;,citation_year=2009;,citation_isbn=978-1-4008-2747-3;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Regulating Aversion: Tolerance in the Age of Identity and Empire;,citation_abstract=Tolerance is generally regarded as an unqualified achievement of the modern West. Emerging in early modern Europe to defuse violent religious conflict and reduce persecution, tolerance today is hailed as a key to decreasing conflict across a wide range of other dividing lines– cultural, racial, ethnic, and sexual. But, as political theorist Wendy Brown argues in Regulating Aversion , tolerance also has dark and troubling undercurrents. Dislike, disapproval, and regulation lurk at the heart of tolerance. To tolerate is not to affirm but to conditionally allow what is unwanted or deviant. And, although presented as an alternative to violence, tolerance can play a part in justifying violence–dramatically so in the war in Iraq and the War on Terror. Wielded, especially since 9/11, as a way of distinguishing a civilized West from a barbaric Islam, tolerance is paradoxically underwriting Western imperialism. Brown’s analysis of the history and contemporary life of tolerance reveals it in a startlingly unfamiliar guise. Heavy with norms and consolidating the dominance of the powerful, tolerance sustains the abjection of the tolerated and equates the intolerant with the barbaric. Examining the operation of tolerance in contexts as different as the War on Terror, campaigns for gay rights, and the Los Angeles Museum of Tolerance, Brown traces the operation of tolerance in contemporary struggles over identity, citizenship, and civilization.;,citation_author=Wendy Brown;,citation_publication_date=2009-01;,citation_cover_date=2009-01;,citation_year=2009;,citation_isbn=978-1-4008-2747-3;,citation_language=en-US;,citation_inbook_title=Regulating Aversion;">
+<meta name="citation_reference" content="citation_title=Frames of war: When is life grievable?;,citation_abstract=This is an exploration of the current wars, looking at violence, gender and different forms of resistance. Judith Butler explores the media’s portrayal of state violence, a process integral to the way in which the West wages modern war.;,citation_author=Judith Butler;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_isbn=978-1-84467-333-9;,citation_language=en-US;">
 <meta name="citation_reference" content="citation_title=The Liberalism of Fear and Public Health Ethics;,citation_abstract=This article argues that the liberalism of fear provides a useful theoretical framework for public health ethics in two fronts. First, it helps reconcile the tension between public health interventions and liberal politics. Second, it reinforces the existing justifications for public health interventions in liberal political culture. The article discusses this in the context of political emotions in the COVID-19 pandemic. Fear plays a central role in the experiences of pandemic politics, and such fear is extended to the concern that post-pandemic government would normalize emergency politics and threaten the political culture of liberal democracy. The article proposes that the liberalism of fear provides a theoretical solution not only to alleviate such fear, but also to reconcile the long-established tension between liberal politics and public health intervention. This is particularly so if the liberalism of fear’s characteristic of political realism is taken into account. The article makes two points about this, and discusses their pragmatic implications in the case of compulsory vaccination.;,citation_author=Alvin Chen;,citation_publication_date=2024-04;,citation_cover_date=2024-04;,citation_year=2024;,citation_issue=1-2;,citation_doi=10.1093/phe/phae001;,citation_issn=1754-9981;,citation_volume=17;,citation_journal_title=Public Health Ethics;">
 <meta name="citation_reference" content="citation_title=The Liberalism of Fear and Public Health Ethics;,citation_abstract=This article argues that the liberalism of fear provides a useful theoretical framework for public health ethics in two fronts. First, it helps reconcile the tension between public health interventions and liberal politics. Second, it reinforces the existing justifications for public health interventions in liberal political culture. The article discusses this in the context of political emotions in the COVID-19 pandemic. Fear plays a central role in the experiences of pandemic politics, and such fear is extended to the concern that post-pandemic government would normalize emergency politics and threaten the political culture of liberal democracy. The article proposes that the liberalism of fear provides a theoretical solution not only to alleviate such fear, but also to reconcile the long-established tension between liberal politics and public health intervention. This is particularly so if the liberalism of fear’s characteristic of political realism is taken into account. The article makes two points about this, and discusses their pragmatic implications in the case of compulsory vaccination.;,citation_author=Alvin Chen;,citation_publication_date=2024-04;,citation_cover_date=2024-04;,citation_year=2024;,citation_issue=1-2;,citation_doi=10.1093/phe/phae001;,citation_issn=1754-9981;,citation_volume=17;,citation_journal_title=Public Health Ethics;">
 <meta name="citation_reference" content="citation_title=Major Publishers Sue Florida Over Banned School Library Books;,citation_abstract=A state law limits sexual content in school libraries. But several publishing companies say it has led to a “regime of strict censorship” in school districts.;,citation_author=Troy Closson;,citation_publication_date=2024-08;,citation_cover_date=2024-08;,citation_year=2024;,citation_issn=0362-4331;,citation_language=en-US;,citation_journal_title=The New York Times;">
 <meta name="citation_reference" content="citation_title=Cumulative index to publications of the Committee on Un-American Activities, 1938-1954 / prepared and released by the Committee on Un-American Activities, ...;,citation_language=en-US;,citation_journal_title=HathiTrust;,citation_publisher=https://hdl.handle.net/2027/umn.31951d03496538i?urlappend=%3Bseq=12;">
 <meta name="citation_reference" content="citation_title=Communism, Conformity, Cohorts, and Categories: American Tolerance in 1954 and 1972-73;,citation_abstract=Samuel A. Stouffer’s 1954 survey is compared with replication data in the National Opinion Research Center’s 1972-73 General Social Surveys to check his Predictions regarding the effects of generation, age, and education on toleranceof Communists and atheists. A flow graph model for difference equations involving categorical variables is used to organize the findings. Major conclusions are these: (1) there has been an average increase of about 23% in tolerant responses; (2) about 4% of this increase is due to cohort effects on educational attainment, as Stouffer predicted; (3) about 5% is due to cohort repalcement per se; (4) about 13% is due to increasing tolerance among all cohort and education groups, the opposite of what Stouffer predicted; and (5) about 1% is due to increased college attainment not accounted for by cohort.;,citation_author=James A. Davis;,citation_publication_date=1975-11;,citation_cover_date=1975-11;,citation_year=1975;,citation_issue=3;,citation_doi=10.1086/226105;,citation_issn=0002-9602;,citation_volume=81;,citation_journal_title=American Journal of Sociology;,citation_publisher=The University of Chicago Press;">
+<meta name="citation_reference" content="citation_title=Declaration of principles and follow-up plan of action for the United Nations Year for Tolerance - UNESCO Digital Library;,citation_publisher=https://unesdoc.unesco.org/ark:/48223/pf0000101344;">
 <meta name="citation_reference" content="citation_title=DeSantis signs bill to teach history of communism in Florida’s public schools – NBC 6 South Florida;,citation_publisher=https://www.nbcmiami.com/news/local/gov-desantis-history-of-communism-bill/3287527/;">
 <meta name="citation_reference" content="citation_title=Monopsony and Employer Mis-optimization Explain Why Wages Bunch at Round Numbers;,citation_abstract=We show that administrative hourly wage data exhibits considerable bunching at round numbers that cannot be explained by rounding of survey respondents. We consider two explanations—worker left-digit bias and employer optimization frictions. We experimentally rule out left-bunching by randomizing wages for an identical task on Amazon Mechanical Turk, and fail to find evidence of any discontinuity in the labor supply function as predicted by workers’ left-digit bias despite a considerable degree of monopsony. We replicate the absence of round number discontinuities in firm labor supply in matched worker-firm hourly wage data from Oregon as well as in an online stated preference experiment conducted with Wal-Mart workers. Further, the shape of the missing mass that accounts for the bunching at a round number exhibits none of the asymmetry predicted by worker left-digit bias. Symmetry of the missing mass distribution around the round number suggests that employer optimization frictions are more important. We show that a more monopsonistic market requires less employer mis-optimization to rationalize the bunching in the data. The extent of monopsony power implied by our estimated labor supply elasticities, which are in line with other recent studies, are consistent with a sizable amount of non-optimal bunching, with only modest losses in profits. Overall, the extent and form of round-number bunching suggests that “behavioral firms” can systematically misprice labor without being driven out of the market in the presence of monopsony power.;,citation_author=Arindrajit Dube;,citation_author=Alan Manning;,citation_author=Suresh Naidu;,citation_publication_date=2018-09;,citation_cover_date=2018-09;,citation_year=2018;,citation_doi=10.3386/w24991;,citation_publisher=National Bureau of Economic Research;,citation_series_title=Working Paper Series;">
 <meta name="citation_reference" content="citation_title=The Need for an Un-American Activities Committee in Congress, 1953;,citation_author=Gerald R. Ford;,citation_publication_date=1953;,citation_cover_date=1953;,citation_year=1953;,citation_series_title=Gerald R. Ford Congressional Papers;">
+<meta name="citation_reference" content="citation_title=Communism, Conformity &amp;amp;amp;amp; Civil Liberties;,citation_abstract=Direction of life (1); personal worries (5); conversation topics (2); issue importance (2); World War III (1); Communist takeover (4); US/Russia relations (1); aid to Allies (2); tax cuts affecting specific items (2); freedom of speech (12); suspicions against others (4); Communist threat to America (5); Communist Americans (6); Communist beliefs (5); suspected Communists (2); reporting suspected Communists to the F.B.I. (8); phone-tapping (1); Communists in America (2); Communists in specific job positions (14); committees investigating Communism (12); protecting innocent people (1); refusal to testify (4); government jobs (3); admitted Communist in various scenarios (9); accused Communist in various scenarios (8); Communist peers (2); leaders handling Communism (5); media habits (7); strict leadership (1); division of people into weak and strong (1); behavior in children (2); harming others (1); presidential election habits (3); Congressional election habits (1).;,citation_author=Fund For The Republic;,citation_author=Samuel A. Stouffer;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_doi=10.25940/ROPER-31089514;,citation_publisher=Roper Center for Public Opinion Research;">
 <meta name="citation_reference" content="citation_title=Communism, Conformity &amp;amp;amp;amp; Civil Liberties;,citation_abstract=Direction of life (1); personal worries (5); conversation topics (2); issue importance (2); World War III (1); Communist takeover (4); US/Russia relations (1); aid to Allies (2); tax cuts affecting specific items (2); freedom of speech (12); suspicions against others (4); Communist threat to America (5); Communist Americans (6); Communist beliefs (5); suspected Communists (2); reporting suspected Communists to the F.B.I. (8); phone-tapping (1); Communists in America (2); Communists in specific job positions (14); committees investigating Communism (12); protecting innocent people (1); refusal to testify (4); government jobs (3); admitted Communist in various scenarios (9); accused Communist in various scenarios (8); Communist peers (2); leaders handling Communism (5); media habits (7); strict leadership (1); division of people into weak and strong (1); behavior in children (2); harming others (1); presidential election habits (3); Congressional election habits (1).;,citation_author=Fund For The Republic;,citation_author=Samuel A. Stouffer;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_doi=10.25940/ROPER-31089514;,citation_publisher=Roper Center for Public Opinion Research;">
 <meta name="citation_reference" content="citation_title=Communism for kids? Legislators continue advancing instructional plans;,citation_abstract=The bill has seen changes. The original version lumped Nazism in with Soviet-style collectivism.;,citation_author=A. G. Gancarski;,citation_publication_date=2024-02;,citation_cover_date=2024-02;,citation_year=2024;,citation_language=en-US;,citation_journal_title=Florida Politics - Campaigns &amp;amp;amp; Elections. Lobbying &amp; Government.;">
 <meta name="citation_reference" content="citation_title=The mismeasure of man;,citation_abstract=Examines the history and inherent flaws of the tests science has used to measure intelligence.;,citation_author=Stephen Jay Gould;,citation_publication_date=1981;,citation_cover_date=1981;,citation_year=1981;,citation_isbn=978-0-14-022501-3;,citation_language=en-US;">
@@ -101,6 +142,7 @@ div.csl-indent {
 <meta name="citation_reference" content="citation_title=Little cold warriors: American childhood in the 1950s;,citation_abstract=&amp;amp;amp;quot;Nostalgic narratives of the 1950s obscure a history of postwar childhood that has more in common with the war years and the sixties, when children were mobilized to fight the Cold War both at home and abroad. This book is about the many ways children and ideas about childhood served the demands of the Cold War.&amp;quot;–Provided by publisher.;,citation_author=Victoria Grieve;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_isbn=978-0-19-067569-1;,citation_language=en-US;">
 <meta name="citation_reference" content="citation_title=The Scientist’s Guide to Writing: How to Write More Easily and Effectively throughout Your Scientific Career;,citation_abstract=The ability to write clearly is critical to any scientific career. The Scientist’s Guide to Writing provides practical advice to help scientists become more effective writers so that their ideas have the greatest possible impact. Drawing on his own experience as a scientist, graduate adviser, and editor, Stephen Heard emphasizes that the goal of all scientific writing should be absolute clarity; that good writing takes deliberate practice; and that what many scientists need are not long lists of prescriptive rules but rather direct engagement with their behaviors and attitudes when they write. He combines advice on such topics as how to generate and maintain writing momentum with practical tips on structuring a scientific paper, revising a first draft, handling citations, responding to peer reviews, managing coauthorships, and more. In an accessible, informal tone, The Scientist’s Guide to Writing explains essential techniques that students, postdoctoral researchers, and early-career scientists need to write more clearly, efficiently, and easily. Emphasizes writing as a process, not just a product Encourages habits that improve motivation and productivity Explains the structure of the scientific paper and the function of each part Provides detailed guidance on submission, review, revision, and publication Addresses issues related to coauthorship, English as a second language, and more;,citation_author=Stephen B. Heard;,citation_publication_date=2016-04;,citation_cover_date=2016-04;,citation_year=2016;,citation_doi=10.1515/9781400881147;,citation_isbn=978-1-4008-8114-7;,citation_language=en-US;">
 <meta name="citation_reference" content="citation_title=Graphical Histories for Visualization: Supporting Analysis, Communication, and Evaluation;,citation_abstract=Interactive history tools, ranging from basic undo and redo to branching timelines of user actions, facilitate iterative forms of interaction. In this paper, we investigate the design of history mechanisms for information visualization. We present a design space analysis of both architectural and interface issues, identifying design decisions and associated trade-offs. Based on this analysis, we contribute a design study of graphical history tools for Tableau, a database visualization system. These tools record and visualize interaction histories, support data analysis and communication of findings, and contribute novel mechanisms for presenting, managing, and exporting histories. Furthermore, we have analyzed aggregated collections of history sessions to evaluate Tableau usage. We describe additional tools for analyzing userspsila history logs and how they have been applied to study usage patterns in Tableau.;,citation_author=Jeffrey Heer;,citation_author=Jock Mackinlay;,citation_author=Chris Stolte;,citation_author=Maneesh Agrawala;,citation_publication_date=2008-11;,citation_cover_date=2008-11;,citation_year=2008;,citation_issue=6;,citation_doi=10.1109/TVCG.2008.137;,citation_issn=1941-0506;,citation_volume=14;,citation_journal_title=IEEE Transactions on Visualization and Computer Graphics;">
+<meta name="citation_reference" content="citation_title=Protestant–Catholic–Jew: An Essay in American Religious Sociology;,citation_abstract=&amp;amp;amp;quot;The most honored discussion of American religion in mid-twentieth century times is Will Herberg’s Protestant-Catholic-Jew. . . . [It] spoke precisely to the mid-century condition and speaks in still applicable ways to the American condition and, at its best, the human condition.&amp;quot;—Martin E. Marty, from the Introduction &quot;In Protestant-Catholic-Jew Will Herberg has written the most fascinating essay on the religious sociology of America that has appeared in decades. He has digested all the relevant historical, sociological and other analytical studies, but the product is no mere summary of previous findings. He has made these findings the basis of a new and creative approach to the American scene. It throws as much light on American society as a whole as it does on the peculiarly religious aspects of American life. Mr. Herberg. . . illumines many facets of the American reality, and each chapter presents surprising, and yet very compelling, theses about the religious life of this country. Of all these perhaps the most telling is his thesis that America is not so much a melting pot as three fairly separate melting pots.&quot;—Reinhold Niebuhr, New Yorks Times Book Review;,citation_author=Will Herberg;,citation_publication_date=1983-10;,citation_cover_date=1983-10;,citation_year=1983;,citation_isbn=978-0-226-32734-1;,citation_language=en-US;">
 <meta name="citation_reference" content="citation_title=Temperature fluctuations in canonical systems: Insights from molecular dynamics simulations;,citation_author=J Hickman;,citation_author=Y Mishin;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_issue=18;,citation_volume=94;,citation_journal_title=Physical Review B;,citation_publisher=APS;">
 <meta name="citation_reference" content="citation_title=House Bill 1349 (2024) - The Florida Senate;,citation_publisher=https://www.flsenate.gov/Session/Bill/2024/1349;">
 <meta name="citation_reference" content="citation_title=LIFE;,citation_abstract=LIFE Magazine is the treasured photographic magazine that chronicled the 20th Century. It now lives on at LIFE.com, the largest, most amazing collection of professional photography on the internet. Users can browse, search and view photos of today’s people and events. They have free access to share, print and post images for personal use.;,citation_author=Time Inc;,citation_publication_date=1941-05;,citation_cover_date=1941-05;,citation_year=1941;,citation_language=en-US;">
@@ -110,14 +152,18 @@ div.csl-indent {
 <meta name="citation_reference" content="citation_title=Whittaker Chambers (Book Review) (Undetermined);,citation_author=Tony Judt;,citation_publication_date=1997-04;,citation_cover_date=1997-04;,citation_year=1997;,citation_issn=00286583;,citation_volume=216;,citation_journal_title=New Republic;">
 <meta name="citation_reference" content="citation_title=Why the Cold War Worked;,citation_abstract=1. Postwar London, where I grew up, was a world fueled by coal and driven by steam, where market vendors still used horses, where motor cars were uncommon;,citation_author=Tony Judt;,citation_publication_date=1997-10;,citation_cover_date=1997-10;,citation_year=1997;,citation_issue=15;,citation_issn=0028-7504;,citation_volume=44;,citation_language=en-US;,citation_journal_title=The New York Review of Books;">
 <meta name="citation_reference" content="citation_title=Open Survey Questions as Measures of Personal Concern with Issues: A Reanalysis of Stouffer’s Communism, Conformity, and Civil Liberties;,citation_abstract=Answers to open survey questions, because they represent a respondent’s own words rather than a choice among preformulated responses, are often assumed to reflect concern over or involvement in an issue mentioned spontaneously. Stouffer (1955) makes such an assumption in his classic book, Communism, Conformity, and Civil Liberties, which includes both open and closed questions about the same attitude objects. The open questions are intended to assess &amp;amp;amp;quot;the depth and intensity of opinions&amp;quot; expressed. We reanalyze Stouffer’s data and show that his assumption about answers to open questions cannot be sustained, at least with respect to the main issues that concerned the author and his readers and that continue to concern us today. However, some indirect evidence supports a modification of the assumption in the case of issues that are not the focus of media attention.;,citation_author=Emily W. Kane;,citation_author=Howard Schuman;,citation_publication_date=1991;,citation_cover_date=1991;,citation_year=1991;,citation_fulltext_html_url=https://www.jstor.org/stable/270932;,citation_doi=10.2307/270932;,citation_issn=0081-1750;,citation_volume=21;,citation_journal_title=Sociological Methodology;,citation_publisher=[American Sociological Association, Wiley, Sage Publications, Inc.];">
+<meta name="citation_reference" content="citation_title=Open Survey Questions as Measures of Personal Concern with Issues: A Reanalysis of Stouffer’s Communism, Conformity, and Civil Liberties;,citation_abstract=Answers to open survey questions, because they represent a respondent’s own words rather than a choice among preformulated responses, are often assumed to reflect concern over or involvement in an issue mentioned spontaneously. Stouffer (1955) makes such an assumption in his classic book, Communism, Conformity, and Civil Liberties, which includes both open and closed questions about the same attitude objects. The open questions are intended to assess &amp;amp;amp;quot;the depth and intensity of opinions&amp;quot; expressed. We reanalyze Stouffer’s data and show that his assumption about answers to open questions cannot be sustained, at least with respect to the main issues that concerned the author and his readers and that continue to concern us today. However, some indirect evidence supports a modification of the assumption in the case of issues that are not the focus of media attention.;,citation_author=Emily W. Kane;,citation_author=Howard Schuman;,citation_publication_date=1991;,citation_cover_date=1991;,citation_year=1991;,citation_fulltext_html_url=https://www.jstor.org/stable/270932;,citation_doi=10.2307/270932;,citation_issn=0081-1750;,citation_volume=21;,citation_journal_title=Sociological Methodology;,citation_publisher=[American Sociological Association, Wiley, Sage Publications, Inc.];">
 <meta name="citation_reference" content="citation_title=Encyclopedia of the McCarthy era;,citation_author=William K. Klingaman;,citation_publication_date=1996;,citation_cover_date=1996;,citation_year=1996;">
 <meta name="citation_reference" content="citation_title=Florida schoolkids may have to study “threat of communism in the US”;,citation_abstract=Republican bills likely to reach Governor Ron DeSantis, who has railed against indoctrination of students by “liberal elites”;,citation_author=Richard Luscombe;,citation_publication_date=2024-02;,citation_cover_date=2024-02;,citation_year=2024;,citation_issn=0261-3077;,citation_language=en-GB;,citation_journal_title=The Guardian;">
 <meta name="citation_reference" content="citation_title=Divided armies: Inequality and battlefield performance in modern war;,citation_abstract=&amp;amp;amp;quot;How do armies fight and what makes them victorious on the modern battlefield? In Divided Armies, Jason Lyall challenges long-standing answers to this classic question by linking the fate of armies to their levels of inequality. Introducing the concept of military inequality, Lyall demonstrates how a state’s prewar choices about the citizenship status of ethnic groups within its population determine subsequent battlefield performance. Treating certain ethnic groups as second-class citizens, either by subjecting them to state-sanctioned discrimination or, worse, violence, undermines interethnic trust, fuels grievances, and leads victimized soldiers to subvert military authorities once war begins. The higher an army’s inequality, Lyall finds, the greater its rates of desertion, side-switching, casualties, and use of coercion to force these soldiers to fight. In a sweeping historical investigation, Lyall draws on Project Mars, a new dataset of 250 conventional wars fought since 1800, to test this argument. Project Mars breaks with prior efforts by including overlooked non-Western wars while cataloguing new patterns of inequality and wartime conduct across hundreds of belligerents. Combining historical comparisons and statistical analysis, Lyall also marshals evidence from nine wars, ranging from the Eastern Fronts of World War I and II to less familiar wars in Africa and Central Asia, to illustrate inequality’s effects. Sounding the alarm on the dangers of inequality, Divided Armies offers important lessons about battlefield performance over two centuries–and for wars still to come&amp;quot;– Provided by publisher.;,citation_author=Jason Lyall;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_isbn=978-0-691-19243-7;,citation_language=en-US;,citation_series_title=Princeton studies in international history and politics;">
 <meta name="citation_reference" content="citation_title=The Ford Foundation; the men and the millions;,citation_author=Dwight Macdonald;,citation_publication_date=1956;,citation_cover_date=1956;,citation_year=1956;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Good Muslim, Bad Muslim: America, the Cold War, and the Roots of Terror;,citation_abstract=In this brilliant look at the rise of political Islam, the distinguished political scientist and anthropologist Mahmood Mamdani brings his expertise and insight to bear on a question many Americans have been asking since 9/11: how did this happen?Mamdani dispels the idea of “good” (secular, westernized) and “bad” (premodern, fanatical) Muslims, pointing out that these judgments refer to political rather than cultural or religious identities. The presumption that there are “good” Muslims readily available to be split off from “bad” Muslims masks a failure to make a political analysis of our times. This book argues that political Islam emerged as the result of a modern encounter with Western power, and that the terrorist movement at the center of Islamist politics is an even more recent phenomenon, one that followed America’s embrace of proxy war after its defeat in Vietnam. Mamdani writes with great insight about the Reagan years, showing America’s embrace of the highly ideological politics of “good” against “evil.” Identifying militant nationalist governments as Soviet proxies in countries such as Nicaragua and Afghanistan, the Reagan administration readily backed terrorist movements, hailing them as the “moral equivalents” of America’s Founding Fathers. The era of proxy wars has come to an end with the invasion of Iraq. And there, as in Vietnam, America will need to recognize that it is not fighting terrorism but nationalism, a battle that cannot be won by occupation.Good Muslim, Bad Muslim is a provocative and important book that will profoundly change our understanding both of Islamist politics and the way America is perceived in the world today.;,citation_author=Mahmood Mamdani;,citation_publication_date=2005-06;,citation_cover_date=2005-06;,citation_year=2005;,citation_isbn=978-0-385-51591-7;,citation_language=en-US;">
 <meta name="citation_reference" content="citation_title=The Mismeasure of Man;,citation_abstract=The definitive refutation to the argument of $&amp;amp;amp;lt;$em$&amp;gt;$The Bell Curve$&amp;lt;$/em$&amp;gt;$., The Mismeasure of Man, Stephen Jay Gould, 9780393314250;,citation_language=en-US;,citation_publisher=https://wwnorton.com/books/The-Mismeasure-of-Man/;">
+<meta name="citation_reference" content="citation_title=Universal Declaration of Human Rights;,citation_abstract=A milestone document in the history of human rights, the Universal Declaration of Human Rights set out, for the first time, fundamental human rights to be universally protected. It has been translated into over 500 languages.;,citation_author=United Nations;,citation_language=en-US;,citation_journal_title=United Nations;,citation_publisher=https://www.un.org/en/about-us/universal-declaration-of-human-rights; United Nations;">
 <meta name="citation_reference" content="citation_title=Humanitarian Invasion: Global Development in Cold War Afghanistan;,citation_abstract=Humanitarian Invasion is the first book of its kind: a ground-level inside account of what development and humanitarianism meant for Afghanistan, a country touched by international aid like no other. Relying on Soviet, Western, and NGO archives, interviews with Soviet advisers and NGO workers, and Afghan sources, Timothy Nunan forges a vivid account of the impact of development on a country on the front lines of the Cold War. Nunan argues that Afghanistan functioned as a laboratory for the future of the Third World nation-state. If, in the 1960s, Soviets, Americans, and Germans sought to make a territorial national economy for Afghanistan, later, under military occupation, Soviet nation-builders, French and Swedish humanitarians, and Pakistani-supported guerrillas fought a transnational civil war over Afghan statehood. Covering the entire period from the Cold War to Taliban rule, Humanitarian Invasion signals the beginning of a new stage in the writing of international history.;,citation_author=Timothy Nunan;,citation_publication_date=2016-01;,citation_cover_date=2016-01;,citation_year=2016;,citation_isbn=978-1-316-48333-6;,citation_language=en-US;">
 <meta name="citation_reference" content="citation_title=“Neither East Nor West,” Neither Liberal Nor Illiberal? Iranian Islamist Internationalism in the 1980s;,citation_abstract=This article examines the ways in which transnational Islamist organizations backed by the Islamic Republic of Iran engaged with ideas of liberal internationalism in the 1980s. Challenging the idea of Islamist organizations as irreconcilably opposed to organizations like the United Nations or nation-state centric international organizations, the article shows how periodicals published by and for Iraqis and Afghans were often quite ambiguous as to whether they endorsed pan-Islamism or forms of international order based around sovereign nation-states. The article explores this ambiguity through such groups’ relationship toward ideas of pan-Islamism; international institutions like the Non-Aligned Movement and the Bretton Woods institutions; and the United Nations itself. Ultimately, the article shows how Tehran and its proxies demanded that transnational Islamist groups be taken seriously as subjects of international diplomacy and that the UN live up to liberal values of self-determination.;,citation_author=Timothy Nunan;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_fulltext_html_url=https://www.jstor.org/stable/26904321;,citation_issue=1;,citation_issn=1045-6007;,citation_volume=31;,citation_journal_title=Journal of World History;,citation_publisher=[University of Hawai’i Press, World History Association];">
 <meta name="citation_reference" content="citation_title=Grand Expectations: The United States, 1945-1974;,citation_abstract=Beginning in 1945, America rocketed through a quarter-century of extraordinary economic growth, experiencing an amazing boom that soared to unimaginable heights in the 1960s. At one point, in the late 1940s, American workers produced 57 percent of the planet’s steel, 62 percent of the oil, 80 percent of the automobiles. The U.S. then had three-fourths of the world’s gold supplies. English Prime Minister Edward Heath later said that the United States in the post-War era enjoyed &amp;amp;amp;quot;the greatest prosperity the world has ever known.&amp;quot; It was a boom that produced a national euphoria, a buoyant time of grand expectations and an unprecedented faith in our government, in our leaders, and in the American dream–an optimistic spirit which would be shaken by events in the ’60s and ’70s, and particularly by the Vietnam War. Now, in Grand Expectations, James T. Patterson has written a highly readable and balanced work that weaves the major political, cultural, and economic events of the period into a superb portrait of America from 1945 through Watergate. Here is an era teeming with memorable events–from the bloody campaigns in Korea and the bitterness surrounding McCarthyism to the assassinations of the Kennedys and Martin Luther King, to the Vietnam War, Watergate, and Nixon’s resignation. Patterson excels at portraying the amazing growth after World War II–the great building boom epitomized by Levittown (the largest such development in history) and the baby boom (which exploded literally nine months after V-J Day)–as well as the resultant buoyancy of spirit reflected in everything from streamlined toasters, to big, flashy cars, to the soaring, butterfly roof of TWA’s airline terminal in New York. And he shows how this upbeat, can-do mood spurred grander and grander expectations as the era progressed. Of course, not all Americans shared in this economic growth, and an important thread running through the book is an informed and gripping depiction of the civil rights movement–from the electrifying Brown v. Board of Education decision, to the violent confrontations in Little Rock, Birmingham, and Selma, to the landmark civil rights acts of 1964 and 1965. Patterson also shows how the Vietnam War–which provoked LBJ’s growing credibility gap, vast defense spending that dangerously unsettled the economy, and increasingly angry protests–and a growing rights revolution (including demands by women, Hispanics, the poor, Native Americans, and gays) triggered a backlash that widened hidden rifts in our society, rifts that divided along racial, class, and generational lines. And by Nixon’s resignation, we find a national mood in stark contrast to the grand expectations of ten years earlier, one in which faith in our leaders and in the attainability of the American dream was greatly shaken. The Oxford History of the United States The Oxford History of the United States is the most respected multi-volume history of our nation. The series includes three Pulitzer Prize winners, a New York Times bestseller, and winners of the Bancroft and Parkman Prizes. The Atlantic Monthly has praised it as &quot;the most distinguished series in American historical scholarship,&quot; a series that &quot;synthesizes a generation’s worth of historical inquiry and knowledge into one literally state-of-the-art book.&quot; Conceived under the general editorship of C. Vann Woodward and Richard Hofstadter, and now under the editorship of David M. Kennedy, this renowned series blends social, political, economic, cultural, diplomatic, and military history into coherent and vividly written narrative.;,citation_author=James T. Patterson;,citation_publication_date=1996-04;,citation_cover_date=1996-04;,citation_year=1996;,citation_isbn=978-0-19-974395-7;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Political Tolerance in Poland and the United States*  Social Forces  Oxford Academic;,citation_publisher=https://academic.oup.com/sf/article-abstract/77/4/1525/2233979;">
 <meta name="citation_reference" content="citation_title=Prelude to McCarthyism: The Making of a Blacklist;,citation_abstract=Fall 2006, Vol. 38, No. 3 By Robert Justin Goldstein Enlarge A newspaper article dated December 8, 1947, announces Attorney General Tom Clark’s release of a new list of subversive organizations. (Records of the U.S. House of Representatives, RG 233) The so-called &amp;amp;amp;quot;Attorney General’s List of Subversive Organizations&amp;quot; (AGLOSO) was one of the most central and widely publicized aspects of the post–World War II Red Scare, which has popularly become known as &quot;McCarthyism.&quot; AGLOSO burst into the American consciousness in December 1947, when it was published in connection with President Harry S.;,citation_publication_date=2016-08;,citation_cover_date=2016-08;,citation_year=2016;,citation_language=en-US;,citation_journal_title=National Archives;,citation_publisher=https://www.archives.gov/publications/prologue/2006/fall/agloso.html;">
 <meta name="citation_reference" content="citation_title=Science and religion around the world: Compatibility between belief systems predicts increased well-being;,citation_abstract=Previous research, conducted mainly in Western societies, indicates that religious/spiritual (R/S) and pro-science belief systems each relate positively to believer well-being, but are perceived as being highly incompatible with each other. This perception would presumably undermine one’s ability to benefit fully from both systems, leading to the research questions examined here: does the perceived incompatibility between religion and science vary cross-culturally, and is this level of incompatibility itself related to group member well-being? Our data set included 55,230 participants from 54 countries, organized for analytical purposes into 13 global regions and 11 belief groups. We found that perceived incompatibility between R/S and pro-science beliefs was indeed characteristic of the West but was not the norm cross-culturally. We also found that higher levels of belief system compatibility related positively to well-being, and especially to the strength of positive associations between well-being and each type of belief system. That is, in regions and belief groups that perceived higher compatibility, well-being’s positive relationships with R/S and pro-science beliefs were both also higher. We speculate about compatibility’s potential causal effects on these relationships, noting that as compatibility increases, so does the possibility of benefiting from one system without forgoing the benefits of the other.;,citation_author=Michael E. Price;,citation_author=Dominic D. P. Johnson;,citation_issue=0;,citation_doi=10.1080/2153599X.2024.2363773;,citation_issn=2153-599X;,citation_volume=0;,citation_journal_title=Religion, Brain &amp;amp;amp; Behavior;,citation_publisher=Routledge;">
 <meta name="citation_reference" content="citation_title=Florida’s Governor Just Signed the “Stop Woke Act.” Here’s What It Means for Schools;,citation_abstract=“This bill is going to intimidate every teacher in the state of Florida at every level”;,citation_author=Katie Reilly;,citation_publication_date=2022-04;,citation_cover_date=2022-04;,citation_year=2022;,citation_language=en-US;">
@@ -135,7 +181,10 @@ div.csl-indent {
 <meta name="citation_reference" content="citation_title=Communism, conformity, and civil liberties: A cross-section of the nation speaks its mind;,citation_author=Samuel Andrew Stouffer;,citation_publication_date=1955;,citation_cover_date=1955;,citation_year=1955;">
 <meta name="citation_reference" content="citation_title=Communism, Conformity, and Civil Liberties Study, 1954;,citation_abstract=This study surveyed two different samples of respondents: a cross-section national sample and a leadership sample, the latter of which included people occupying leadership positions in their communities, such as president of the bar association, mayor, chairwoman of a women’s club, president of a large labor union, president of a parent-teacher association, and the chairpersons of the Democratic and Republican party committees at county level. These positions were selected according to the following criteria: they were easily identifiable, were of some influence in the community, and held some relevance to the content of the study. Both samples were interviewed using the same questionnaire. The survey examined reactions of respondents to the danger of a communist conspiracy inside and outside the United States and to the potential sacrifice of civil liberties because of the attempt by some to thwart the conspiracy. The questionnaire began with open-ended questions tapping respondents’ general expectations and fears, followed by questions about their opinions on communism. The subject of an internal or external communist threat was then raised in this context. In addition, variables probed respondents’ positions on issues relating to tolerance, conformity, and civil liberties. Demographic data include age, sex, race, religious preference, education, employment status, and occupation.;,citation_author=Samuel A. Stouffer;,citation_publication_date=1992-02;,citation_cover_date=1992-02;,citation_year=1992;,citation_doi=10.3886/ICPSR07202.v2;,citation_language=en-US;,citation_publisher=Inter-university Consortium for Political and Social Research;">
 <meta name="citation_reference" content="citation_title=Communism, Conformity, and Civil Liberties Study, 1954;,citation_author=Samuel A. Stouffer;,citation_publication_date=1992;,citation_cover_date=1992;,citation_year=1992;,citation_doi=10.3886/ICPSR07202.v2;,citation_publisher=[distributor];">
+<meta name="citation_reference" content="citation_title=Communism, Conformity, and Civil Liberties Study, 1954;,citation_abstract=This study surveyed two different samples of respondents: a cross-section national sample and a leadership sample, the latter of which included people occupying leadership positions in their communities, such as president of the bar association, mayor, chairwoman of a women’s club, president of a large labor union, president of a parent-teacher association, and the chairpersons of the Democratic and Republican party committees at county level. These positions were selected according to the following criteria: they were easily identifiable, were of some influence in the community, and held some relevance to the content of the study. Both samples were interviewed using the same questionnaire. The survey examined reactions of respondents to the danger of a communist conspiracy inside and outside the United States and to the potential sacrifice of civil liberties because of the attempt by some to thwart the conspiracy. The questionnaire began with open-ended questions tapping respondents’ general expectations and fears, followed by questions about their opinions on communism. The subject of an internal or external communist threat was then raised in this context. In addition, variables probed respondents’ positions on issues relating to tolerance, conformity, and civil liberties. Demographic data include age, sex, race, religious preference, education, employment status, and occupation.;,citation_author=Samuel A. Stouffer;,citation_publication_date=1992-02;,citation_cover_date=1992-02;,citation_year=1992;,citation_doi=10.3886/ICPSR07202.v2;,citation_language=en-US;,citation_publisher=Inter-university Consortium for Political and Social Research;">
+<meta name="citation_reference" content="citation_title=A Technique for Improving Cumulative Scales*;,citation_abstract=This paper introduces what is called the H-technique for building cumulative scales with increased precision. The method simply consists of determining a given cutting point in a Guttman or Lazarsfeld latent distance scale not by means of a single response but rather by means of several responses, which are formed into a new “contrived item.” The objective is to maximize the information available from the basic data, and hence to strengthen confidence in the scalability of the area under consideration and the generality of the dimension which the scale is definning, and to improve the ranking of individuals through reduction of scale error. A theorectical example shows the advantages in a special case in which the structure of the population is completely specified. An empirical example from actual data illustrates the procedures used in the computing.Samuel A. Stouffer is Professor of Sociology and Director of the Laboratory of Social Relations at Harvard University; Edgar F. Borgatta is a research associate, David G. Hays and Andrew F. Henry are research assistants of the Laboratory of Social Relations.;,citation_author=SAMUEL A. STOUFFER;,citation_author=EDGAR F. BORGATTA;,citation_author=DAVID G. HAYS;,citation_author=ANDREW F. HENRY;,citation_publication_date=1952-01;,citation_cover_date=1952-01;,citation_year=1952;,citation_issue=2;,citation_doi=10.1086/266388;,citation_issn=0033-362X;,citation_volume=16;,citation_journal_title=Public Opinion Quarterly;">
 <meta name="citation_reference" content="citation_title=Whittaker Chambers: A Biography;,citation_abstract=Whittaker Chambers is the first biography of this complex and enigmatic figure. Drawing on dozens of interviews and on materials from forty archives in the United States and abroad–including still-classified KGB dossiers–Tanenhaus traces the remarkable journey that led Chambers from a sleepy Long Island village to center stage in America’s greatest political trial and then, in his last years, to a unique role as the godfather of post-war conservatism. This biography is rich in startling new information about Chambers’s days as New York’s &amp;amp;amp;quot;hottest literary Bolshevik&amp;quot;; his years as a Communist agent and then defector, hunted by the KGB; his conversion to Quakerism; his secret sexual turmoil; his turbulent decade at Time magazine, where he rose from the obscurity of the book-review page to transform the magazine into an oracle of apocalyptic anti-Communism. But all this was a prelude to the memorable events that began in August 1948, when Chambers testified against Alger Hiss in the spy case that changed America. Whittaker Chambers goes far beyond all previous accounts of the Hiss case, re-creating its improbably twists and turns, and disentangling the motives that propelled a vivid cast of characters in unpredictable directions. A rare conjunction of exacting scholarship and narrative art, Whittaker Chambers is a vivid tapestry of 20th century history.;,citation_author=Sam Tanenhaus;,citation_publication_date=2011-04;,citation_cover_date=2011-04;,citation_year=2011;,citation_isbn=978-0-307-78926-6;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Social Science Research in the Arab World and Beyond: A Guide for Students, Instructors and Researchers;,citation_abstract=This book presents and discusses the logic and method of social science research adapted mainly for instruction at Arab universities and for research in Arab countries, but with applicability beyond the region. It illustrates major concepts and methods pertaining to research with examples of previous studies carried out in the Arab world and with exercises using Arab Barometer and other datasets. The book situates itself between a regular methods textbook and an annotated list of major concepts and methods, and includes an introduction, three chapters, and four appendices.;,citation_author=Mark Tessler;,citation_publication_date=2022-10;,citation_cover_date=2022-10;,citation_year=2022;,citation_isbn=978-3-031-13838-6;,citation_language=en-US;">
 <meta name="citation_reference" content="citation_title=Political Control of the Economy;,citation_abstract=Speculations about the effects of politics on economic life have a long and vital tradition, but few efforts have been made to determine the precise relationship between them. Edward Tufte, a political scientist who covered the 1976 Presidential election for Newsweek , seeks to do just that. His sharp analyses and astute observations lead to an eye-opening view of the impact of political life on the national economy of America and other capitalist democracies. The analysis demonstrates how politicians, political parties, and voters decide who gets what, when, and how in the economic arena. A nation’s politics, it is argued, shape the most important aspects of economic life–inflation, unemployment, income redistribution, the growth of government, and the extent of central economic control. Both statistical data and case studies (based on interviews and Presidential documents) are brought to bear on four topics. They are: 1) the political manipulation of the economy in election years, 2) the new international electoral-economic cycle, 3) the decisive role of political leaders and parties in shaping macroeconomic outcomes, and 4) the response of the electorate to changing economic conditions. Finally, the book clarifies a central question in political economy: How can national economic policy be conducted in both a democratic and a competent fashion?;,citation_author=Edward R. Tufte;,citation_publication_date=2020-10;,citation_cover_date=2020-10;,citation_year=2020;,citation_doi=10.1515/9780691219417;,citation_isbn=978-0-691-21941-7;,citation_language=en-US;">
 <meta name="citation_reference" content="citation_title=Letter to the House UnAmerican Activities Committee (HUAC) from Lillian Hellman Regarding Testimony;,citation_abstract=Playwright Lillian Hellman sent this letter to the House Un-American Activities Committee (HUAC) in response to being subpoenaed to appear before the Committee. In her letter she states that her legal counsel informed her that if she answered any questions about her life, she would waive her rights under the Fifth Amendment of the U.S. Constitution, and thus be forced to answer questions about other people that she knew. She notes she is opposed to being required to answer questions about others, but would answer questions about herself.;,citation_author=U.S. House of Representatives. Committee on Internal Security. (1969 - 1975);,citation_author=U.S. House of Representatives. Committee on Un-American Activities. (1945 - 1969);,citation_series_title=Records of the U.S. House of Representatives;">
 <meta name="citation_reference" content="citation_title=Un-American Activities Committee;,citation_publication_date=2013-10;,citation_cover_date=2013-10;,citation_year=2013;,citation_publisher=https://web.archive.org/web/20131005020334/http://www.spartacus.schoolnet.co.uk/USAhuac.htm;">
@@ -191,24 +240,31 @@ div.csl-indent {
    
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#harvest-from-historical-data-collection-efforts-a-more-friendly-format" id="toc-harvest-from-historical-data-collection-efforts-a-more-friendly-format" class="nav-link" data-scroll-target="#harvest-from-historical-data-collection-efforts-a-more-friendly-format">Harvest from Historical Data collection efforts: a more friendly format</a></li>
+  <li><a href="#returning-target-variables-to-the-data" id="toc-returning-target-variables-to-the-data" class="nav-link" data-scroll-target="#returning-target-variables-to-the-data">Returning target variables to the data</a></li>
+  <li><a href="#scale1-willingness-to-tolerate-nonconformist" id="toc-scale1-willingness-to-tolerate-nonconformist" class="nav-link" data-scroll-target="#scale1-willingness-to-tolerate-nonconformist">Scale1: Willingness to Tolerate Nonconformist</a></li>
+  <li><a href="#scale2-scale-of-the-perception-on-the-internal-communist-danger" id="toc-scale2-scale-of-the-perception-on-the-internal-communist-danger" class="nav-link" data-scroll-target="#scale2-scale-of-the-perception-on-the-internal-communist-danger">Scale2: Scale of the Perception on the Internal Communist Danger</a>
   <ul class="collapse">
-  <li><a href="#why-are-we-still-discussing-tolerance" id="toc-why-are-we-still-discussing-tolerance" class="nav-link" data-scroll-target="#why-are-we-still-discussing-tolerance">Why are we still discussing Tolerance</a></li>
+  <li><a href="#broader-rank-groups" id="toc-broader-rank-groups" class="nav-link" data-scroll-target="#broader-rank-groups">Broader rank groups</a></li>
+  <li><a href="#data-and-measures-validility" id="toc-data-and-measures-validility" class="nav-link" data-scroll-target="#data-and-measures-validility">Data and Measures: Validility</a></li>
   </ul></li>
-  <li><a href="#literature-review" id="toc-literature-review" class="nav-link" data-scroll-target="#literature-review">Literature Review</a>
+  <li><a href="#evaluating-operationallizations-reliability-and-validity-insights-from-classfication-algorithms" id="toc-evaluating-operationallizations-reliability-and-validity-insights-from-classfication-algorithms" class="nav-link" data-scroll-target="#evaluating-operationallizations-reliability-and-validity-insights-from-classfication-algorithms">Evaluating Operationallizations: Reliability and Validity, insights from classfication algorithms</a>
   <ul class="collapse">
-  <li><a href="#data-ethics" id="toc-data-ethics" class="nav-link" data-scroll-target="#data-ethics">Data Ethics</a></li>
-  <li><a href="#context-of-the-discussion-of-tolerance" id="toc-context-of-the-discussion-of-tolerance" class="nav-link" data-scroll-target="#context-of-the-discussion-of-tolerance">Context of the discussion of Tolerance</a></li>
+  <li><a href="#class-classification-using-the-strict-measure-of-tolerance-score-tolerance_broader0" id="toc-class-classification-using-the-strict-measure-of-tolerance-score-tolerance_broader0" class="nav-link" data-scroll-target="#class-classification-using-the-strict-measure-of-tolerance-score-tolerance_broader0">3-class classification using the strict measure of tolerance score <code>tolerance_broader0</code></a></li>
+  <li><a href="#class-classification" id="toc-class-classification" class="nav-link" data-scroll-target="#class-classification">3-class classification</a></li>
+  <li><a href="#class-classification-tolerance_broader-based-on-the-measure-with-wiggle-room" id="toc-class-classification-tolerance_broader-based-on-the-measure-with-wiggle-room" class="nav-link" data-scroll-target="#class-classification-tolerance_broader-based-on-the-measure-with-wiggle-room">3-class classification: <code>tolerance_broader</code> based on the measure with wiggle room</a></li>
+  <li><a href="#are-these-selected-items-capturing-most-of-the-variances" id="toc-are-these-selected-items-capturing-most-of-the-variances" class="nav-link" data-scroll-target="#are-these-selected-items-capturing-most-of-the-variances">Are these selected Items capturing most of the variances?</a></li>
+  <li><a href="#truly-learning-dropping-the-15-items-that-contribute-to-the-tolerance-scaling" id="toc-truly-learning-dropping-the-15-items-that-contribute-to-the-tolerance-scaling" class="nav-link" data-scroll-target="#truly-learning-dropping-the-15-items-that-contribute-to-the-tolerance-scaling">Truly Learning: dropping the 15 items that contribute to the tolerance scaling</a></li>
+  <li><a href="#acquired-the-class-specific-variables-and-their-coefficients" id="toc-acquired-the-class-specific-variables-and-their-coefficients" class="nav-link" data-scroll-target="#acquired-the-class-specific-variables-and-their-coefficients">Acquired the class specific variables and their coefficients</a></li>
   </ul></li>
-  <li><a href="#data-and-methods" id="toc-data-and-methods" class="nav-link" data-scroll-target="#data-and-methods">Data and Methods</a>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
   <ul class="collapse">
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
-  <li><a href="#context-of-the-1954-survey" id="toc-context-of-the-1954-survey" class="nav-link" data-scroll-target="#context-of-the-1954-survey">Context of the 1954 Survey</a></li>
+  <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections">Reflections</a></li>
   </ul></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
   <li><a href="#policy-recommendation" id="toc-policy-recommendation" class="nav-link" data-scroll-target="#policy-recommendation">Policy Recommendation</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index-preview.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li></ul></div></nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
@@ -221,68 +277,993 @@ div.csl-indent {
 
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>This project looked into an attempt in the fifties that set out to measure individual tolerance and use that measure to evaluate the impact the anti-Communism Cold War agenda—both abroad and at home—had on U.S. citizens. I saw the picking up of this 70-year-old survey data, and the analysis that accompanied it, as a chance to stroll through the data ethics concerns that can arise when holding the hope to learn about the world from data</p>
 </section>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The online poll data library host by Roper Center was where I first came across the Stouffer Study of 1954 <em>Communism, Conformity, and Civil Liberties: A Cross-Section of the Nation Speaks Its Mind</em> by Samuel Andrew Stouffer<span class="citation" data-cites="fundfortherepublicCommunismConformityAmp2020">(<a href="#ref-fundfortherepublicCommunismConformityAmp2020" role="doc-biblioref">Fund For The Republic and Stouffer 2020</a>)</span>And, I gain access to the entire dataset on ICPSR<span class="citation" data-cites="stoufferCommunismConformityCivil1992">(<a href="#ref-stoufferCommunismConformityCivil1992" role="doc-biblioref">Samuel A. Stouffer 1992</a>)</span></p>
 <p><a href="image/stouffer-cover.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="image/stouffer-cover.png" class="img-fluid" style="width:50.0%"></a></p>
-<p>1954 Survey<span class="citation" data-cites="stoufferCommunismConformityCivil1992">(<a href="#ref-stoufferCommunismConformityCivil1992" role="doc-biblioref">Stouffer 1992</a>)</span></p>
-<section id="why-are-we-still-discussing-tolerance" class="level3">
-<h3 class="anchored" data-anchor-id="why-are-we-still-discussing-tolerance">Why are we still discussing Tolerance</h3>
-<p>The state can’t implement toleration if there are no significant presence of tolerance in the community.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>The term toleration is an idea of negative liberty, and involves elements of judgement<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
-<p>The logic of toleration is outdated and can be seen as offensive, however, it is still operating. We would find rethinking the idea of toleration a fruitful journey. People can be driven by complicated motives and reasons to tolerate.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>I found Stouffer’s attempt in the fifties to design public opion polls and, construct an innovative way of measuring the latent properties tolerance and fear in at the individual level very interesting. The tolerance scale and the perception of internal communist danger scale are not included in the data, thus a major part of this project involved returning these two target variables in order to complete the picture and reproduce that basis on which Stouffer’s was primary based. I learned much from this practice of reading and researching that past effort into conceptualizing and ooperationalizing tolerance and fear, and got my hands dirty to really apply those framing and method to the data. It gave me a chance to reflect on the many artistic and arbitrary decisions that the researcher made throughout this data analysis process.</p>
+</section>
+<section id="harvest-from-historical-data-collection-efforts-a-more-friendly-format" class="level2">
+<h2 class="anchored" data-anchor-id="harvest-from-historical-data-collection-efforts-a-more-friendly-format">Harvest from Historical Data collection efforts: a more friendly format</h2>
+<p>In terms of not violate the redistribution policy of ICPSR, here won’t be providing the converted files, rather STATA .do and .dct files constructed by the author (derived from the codebook)</p>
+<p>│&nbsp;&nbsp; ├── read-ascii-files │&nbsp;&nbsp; │&nbsp;&nbsp; ├── gp-decode.do │&nbsp;&nbsp; │&nbsp;&nbsp; ├── lead-decode.do │&nbsp;&nbsp; │&nbsp;&nbsp; ├── sample1.dct │&nbsp;&nbsp; │&nbsp;&nbsp; └── sample2.dct</p>
+</section>
+<section id="returning-target-variables-to-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="returning-target-variables-to-the-data">Returning target variables to the data</h2>
+<p>The tolerance that Stouffer argued upon.<span class="citation" data-cites="stouffer1955communism">(<a href="#ref-stouffer1955communism" role="doc-biblioref">Samuel Andrew Stouffer 1955</a>)</span></p>
+<section id="preparing-the-code_df-data-frame" class="level4">
+<h4 class="anchored" data-anchor-id="preparing-the-code_df-data-frame">Preparing the <code>code_df</code> data frame</h4>
+<ol type="1">
+<li>Cleaning column names and binding the two samples</li>
+</ol>
+<ol type="1">
+<li>Adding Binary and Ternary Variables <code>leader</code>,<code>interested</code> and <code>categorizer</code>: these are the variables that Stouffer specified in his book as ways to divide the respondents and make comparisons.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">leader</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4933</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1500</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<a class="quarto-notebook-link" id="nblink-1" href="index-preview.html">Source: Article Notebook</a></div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">leader</th>
+<th style="text-align: left;">interested</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">pct</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">less</td>
+<td style="text-align: right;">2155</td>
+<td style="text-align: right;">43.68538</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">more</td>
+<td style="text-align: right;">2778</td>
+<td style="text-align: right;">56.31462</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">less</td>
+<td style="text-align: right;">210</td>
+<td style="text-align: right;">14.00000</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">more</td>
+<td style="text-align: right;">1290</td>
+<td style="text-align: right;">86.00000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">leader</th>
+<th style="text-align: left;">categorizer</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">pct</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">agree</td>
+<td style="text-align: right;">3127</td>
+<td style="text-align: right;">63.389418</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">disagree</td>
+<td style="text-align: right;">1495</td>
+<td style="text-align: right;">30.306102</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">dont know</td>
+<td style="text-align: right;">311</td>
+<td style="text-align: right;">6.304480</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">agree</td>
+<td style="text-align: right;">806</td>
+<td style="text-align: right;">53.733333</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">disagree</td>
+<td style="text-align: right;">669</td>
+<td style="text-align: right;">44.600000</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">dont know</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">1.666667</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </section>
 </section>
-<section id="literature-review" class="level2">
-<h2 class="anchored" data-anchor-id="literature-review">Literature Review</h2>
-<section id="data-ethics" class="level3">
-<h3 class="anchored" data-anchor-id="data-ethics">Data Ethics</h3>
-<p>The Mismeasure of Man<span class="citation" data-cites="MismeasureMan">(<a href="#ref-MismeasureMan" role="doc-biblioref"><span>“The <span>Mismeasure</span> of <span>Man</span>”</span> n.d.</a>)</span></p>
+<section id="scale1-willingness-to-tolerate-nonconformist" class="level2">
+<h2 class="anchored" data-anchor-id="scale1-willingness-to-tolerate-nonconformist">Scale1: Willingness to Tolerate Nonconformist</h2>
+<section id="conceptual-tolerance-and-operational-tolerance" class="level4">
+<h4 class="anchored" data-anchor-id="conceptual-tolerance-and-operational-tolerance">Conceptual Tolerance and Operational Tolerance</h4>
+<p>The questionnaires used to rank respondents into six tolerance groups focused on four types of nonconformists:</p>
+<ul>
+<li>A person who is against all churches and religion (atheist)</li>
+<li>A person who favors government ownership (socialist)</li>
+<li>An alleged communist (someone whose loyalty has been questioned by a Congressional Committee but swears under oath they have never been a communist)</li>
+<li>An admitted communist</li>
+</ul>
+<p>respondent were asked about their approval of 3 types of disposition against the above nonconfromist, and whether they agree or disagree the limitation or deprivation of the nonconformist’s civil liberties, for example:</p>
+<ol type="1">
+<li><p>Freedom speech:</p>
+<ul>
+<li>“If ___ wants to make a speech in your community, should he be allowed to speak or not?”</li>
+</ul></li>
+<li><p>Book censor:</p>
+<ul>
+<li>“Suppose he wrote a book that is in your public library. Somebody in your community suggests the book should be removed. Would you favor removing it, or not?”</li>
+</ul></li>
+<li><p>Employment:</p>
+<ul>
+<li>Should a radio singer who is a nonconformist be fired or not?</li>
+<li>Should a college or university teacher be fired or not?</li>
+<li>Should a high school teacher be fired or not?</li>
+<li>Should someone working in a defense plant be fired or not?</li>
+<li>Should a store clerk be fired or not?</li>
+</ul></li>
+<li><p>Boycott:</p>
+<ul>
+<li>“Suppose the radio program he is on advertises a brand of soap. Somebody in your community suggests you stop buying that soap. Would you stop or not?”</li>
+</ul></li>
+</ol>
 </section>
-<section id="context-of-the-discussion-of-tolerance" class="level3">
-<h3 class="anchored" data-anchor-id="context-of-the-discussion-of-tolerance">Context of the discussion of Tolerance</h3>
+<section id="to-5-scaling-individual-tolerance" class="level4">
+<h4 class="anchored" data-anchor-id="to-5-scaling-individual-tolerance">0 to 5: Scaling Individual Tolerance</h4>
+<p>I ran into many challenges replicating Stouffer’s results. Both the overall proportions across tolerance rankings, was unable to reproduce the group counts applying further breakdowns, such as by age, region, education, thus for comparison.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">leader</th>
+<th style="text-align: left;">tolerance_group</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">pct</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance0</td>
+<td style="text-align: right;">651</td>
+<td style="text-align: right;">13.196838</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance1</td>
+<td style="text-align: right;">871</td>
+<td style="text-align: right;">17.656598</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance2</td>
+<td style="text-align: right;">1263</td>
+<td style="text-align: right;">25.603081</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance3</td>
+<td style="text-align: right;">951</td>
+<td style="text-align: right;">19.278330</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance4</td>
+<td style="text-align: right;">395</td>
+<td style="text-align: right;">8.007298</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance5</td>
+<td style="text-align: right;">802</td>
+<td style="text-align: right;">16.257855</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance0</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">5.266667</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance1</td>
+<td style="text-align: right;">182</td>
+<td style="text-align: right;">12.133333</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance2</td>
+<td style="text-align: right;">180</td>
+<td style="text-align: right;">12.000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance3</td>
+<td style="text-align: right;">246</td>
+<td style="text-align: right;">16.400000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance4</td>
+<td style="text-align: right;">205</td>
+<td style="text-align: right;">13.666667</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance5</td>
+<td style="text-align: right;">608</td>
+<td style="text-align: right;">40.533333</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">tolerance_group</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">tolerance0</td>
+<td style="text-align: right;">730</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tolerance1</td>
+<td style="text-align: right;">1053</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tolerance2</td>
+<td style="text-align: right;">1443</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tolerance3</td>
+<td style="text-align: right;">1197</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tolerance4</td>
+<td style="text-align: right;">600</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tolerance5</td>
+<td style="text-align: right;">1410</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="broader-tolerance-rank-groups-less-tolerant-in-between-and-more-tolerant" class="level4">
+<h4 class="anchored" data-anchor-id="broader-tolerance-rank-groups-less-tolerant-in-between-and-more-tolerant">Broader Tolerance Rank Groups: <code>less tolerant</code>, <code>in-between</code> and <code>more tolerant</code></h4>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">tolerance_broader0</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">pct</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">more tolerant</td>
+<td style="text-align: right;">813</td>
+<td style="text-align: right;">54.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">in between</td>
+<td style="text-align: right;">426</td>
+<td style="text-align: right;">28.4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">less tolerant</td>
+<td style="text-align: right;">261</td>
+<td style="text-align: right;">17.4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="attempt2" class="level4">
+<h4 class="anchored" data-anchor-id="attempt2">Attempt2</h4>
+<p>Allowing some inconsistency?</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">tolerance</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">tolerance0</td>
+<td style="text-align: right;">674</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tolerance1</td>
+<td style="text-align: right;">530</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tolerance2</td>
+<td style="text-align: right;">1334</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tolerance3</td>
+<td style="text-align: right;">1229</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tolerance4</td>
+<td style="text-align: right;">807</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tolerance5</td>
+<td style="text-align: right;">1859</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">leader</th>
+<th style="text-align: left;">tolerance</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">pct</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance0</td>
+<td style="text-align: right;">604</td>
+<td style="text-align: right;">12.244070</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance1</td>
+<td style="text-align: right;">491</td>
+<td style="text-align: right;">9.953375</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance2</td>
+<td style="text-align: right;">1179</td>
+<td style="text-align: right;">23.900264</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance3</td>
+<td style="text-align: right;">993</td>
+<td style="text-align: right;">20.129738</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance4</td>
+<td style="text-align: right;">554</td>
+<td style="text-align: right;">11.230488</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">tolerance5</td>
+<td style="text-align: right;">1112</td>
+<td style="text-align: right;">22.542064</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance0</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">4.666667</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance1</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">2.600000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance2</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">10.333333</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance3</td>
+<td style="text-align: right;">236</td>
+<td style="text-align: right;">15.733333</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance4</td>
+<td style="text-align: right;">253</td>
+<td style="text-align: right;">16.866667</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tolerance5</td>
+<td style="text-align: right;">747</td>
+<td style="text-align: right;">49.800000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">leader</th>
+<th style="text-align: left;">tolerance_broader</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">pct</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">more tolerant</td>
+<td style="text-align: right;">1666</td>
+<td style="text-align: right;">33.772552</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">in between</td>
+<td style="text-align: right;">2172</td>
+<td style="text-align: right;">44.030002</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">less tolerant</td>
+<td style="text-align: right;">1095</td>
+<td style="text-align: right;">22.197446</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">more tolerant</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">66.666667</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">in between</td>
+<td style="text-align: right;">391</td>
+<td style="text-align: right;">26.066667</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">less tolerant</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: right;">7.266667</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>To answer this question<span class="citation" data-cites="stouffer1955communism">(<a href="#ref-stouffer1955communism" role="doc-biblioref">Samuel Andrew Stouffer 1955, 51</a>)</span></p>
+<p><a href="image/tolerance-distribution.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="image/tolerance-distribution.png" class="img-fluid" style="width:50.0%"></a></p>
+<section id="us-region" class="level5">
+<h5 class="anchored" data-anchor-id="us-region">us region</h5>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">us_region</th>
+<th style="text-align: left;">tolerance_broader</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">pct</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">east</td>
+<td style="text-align: left;">more tolerant</td>
+<td style="text-align: right;">276</td>
+<td style="text-align: right;">68.148148</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">east</td>
+<td style="text-align: left;">in between</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">26.419753</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">east</td>
+<td style="text-align: left;">less tolerant</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">5.432099</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">midwest</td>
+<td style="text-align: left;">more tolerant</td>
+<td style="text-align: right;">348</td>
+<td style="text-align: right;">69.322709</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">midwest</td>
+<td style="text-align: left;">in between</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: right;">24.501992</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">midwest</td>
+<td style="text-align: left;">less tolerant</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">6.175299</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">south</td>
+<td style="text-align: left;">more tolerant</td>
+<td style="text-align: right;">225</td>
+<td style="text-align: right;">57.251908</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">south</td>
+<td style="text-align: left;">in between</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: right;">31.297710</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">south</td>
+<td style="text-align: left;">less tolerant</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">11.450382</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">west</td>
+<td style="text-align: left;">more tolerant</td>
+<td style="text-align: right;">151</td>
+<td style="text-align: right;">75.500000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">west</td>
+<td style="text-align: left;">in between</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">19.000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">west</td>
+<td style="text-align: left;">less tolerant</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">5.500000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </section>
 </section>
-<section id="data-and-methods" class="level2">
-<h2 class="anchored" data-anchor-id="data-and-methods">Data and Methods</h2>
-<section id="data" class="level3">
-<h3 class="anchored" data-anchor-id="data">Data</h3>
 </section>
-<section id="context-of-the-1954-survey" class="level3">
-<h3 class="anchored" data-anchor-id="context-of-the-1954-survey">Context of the 1954 Survey</h3>
-<p>The public tends to be suspiscious or tends to forgive Wittaker Chambers and Alger Hiss, based on their “social quality”, to infer <span class="citation" data-cites="judtReappraisalsReflectionsForgotten2008">(<a href="#ref-judtReappraisalsReflectionsForgotten2008" role="doc-biblioref">Judt 2008, 303</a>)</span></p>
+<section id="scale2-scale-of-the-perception-on-the-internal-communist-danger" class="level2">
+<h2 class="anchored" data-anchor-id="scale2-scale-of-the-perception-on-the-internal-communist-danger">Scale2: Scale of the Perception on the Internal Communist Danger</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">danger</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">danger0</td>
+<td style="text-align: right;">507</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">danger1</td>
+<td style="text-align: right;">682</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">danger2</td>
+<td style="text-align: right;">2116</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">danger3</td>
+<td style="text-align: right;">1170</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">danger4</td>
+<td style="text-align: right;">1093</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">danger5</td>
+<td style="text-align: right;">865</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="broader-rank-groups" class="level3">
+<h3 class="anchored" data-anchor-id="broader-rank-groups">Broader rank groups</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">danger_broader</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">great threat</td>
+<td style="text-align: right;">1958</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">in between</td>
+<td style="text-align: right;">3286</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">little threat</td>
+<td style="text-align: right;">1189</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="data-and-measures-validility" class="level3">
+<h3 class="anchored" data-anchor-id="data-and-measures-validility">Data and Measures: Validility</h3>
+<p>From the conceptual variable Tolerance to the operationalized definition of tolerance, that maps answers of the respondent to tolerance group that correspond to their degree of tolerance. But is this tolerance scale really measuring people’s tolerance or is it measuring something else.<span class="citation" data-cites="tesslerSocialScienceResearch2022">(<a href="#ref-tesslerSocialScienceResearch2022" role="doc-biblioref">Tessler 2022, 43–47</a>)</span></p>
+</section>
+</section>
+<section id="evaluating-operationallizations-reliability-and-validity-insights-from-classfication-algorithms" class="level2">
+<h2 class="anchored" data-anchor-id="evaluating-operationallizations-reliability-and-validity-insights-from-classfication-algorithms">Evaluating Operationallizations: Reliability and Validity, insights from classfication algorithms</h2>
+<section id="class-classification-using-the-strict-measure-of-tolerance-score-tolerance_broader0" class="level3">
+<h3 class="anchored" data-anchor-id="class-classification-using-the-strict-measure-of-tolerance-score-tolerance_broader0">3-class classification using the strict measure of tolerance score <code>tolerance_broader0</code></h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">tolerance_broader0</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">in between</td>
+<td style="text-align: right;">426</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">less tolerant</td>
+<td style="text-align: right;">261</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">more tolerant</td>
+<td style="text-align: right;">813</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="class-classification" class="level3">
+<h3 class="anchored" data-anchor-id="class-classification">3-class classification</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>clf0 <span class="ot">&lt;-</span> <span class="fu">cv.glmnet</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  x_train, y_train, <span class="at">family =</span> <span class="st">"multinomial"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> <span class="dv">1</span>, <span class="at">type.multinomial =</span> <span class="st">"ungrouped"</span>, <span class="at">nfolds =</span> <span class="dv">5</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>lambda_1se0 <span class="ot">&lt;-</span> clf0<span class="sc">$</span>lambda<span class="fl">.1</span>se</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>lambda_1se0</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(clf0)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>yp_train <span class="ot">&lt;-</span> <span class="fu">predict</span>(clf0, <span class="at">newx =</span> x_train, <span class="at">s =</span> lambda_1se0, <span class="at">type =</span> <span class="st">'class'</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>train_acc <span class="ot">&lt;-</span> <span class="fu">mean</span>(yp_train <span class="sc">==</span> y_train)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>train_acc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>yp_test <span class="ot">&lt;-</span> <span class="fu">predict</span>(clf0, <span class="at">newx =</span> x_test, <span class="at">s =</span> lambda_1se0, <span class="at">type =</span> <span class="st">'class'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>test_acc <span class="ot">&lt;-</span> <span class="fu">mean</span>(yp_test <span class="sc">==</span> y_test)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>test_acc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>yp_test <span class="ot">&lt;-</span> <span class="fu">factor</span>(yp_test, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"more tolerant"</span>,<span class="st">"in between"</span>, <span class="st">"less tolerant"</span>))</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>y_test  <span class="ot">&lt;-</span> <span class="fu">factor</span>(y_test, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"more tolerant"</span>,<span class="st">"in between"</span>, <span class="st">"less tolerant"</span>))</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>lr_cm0 <span class="ot">&lt;-</span> <span class="fu">confusionMatrix</span>(yp_test, y_test)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>lr_cm0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>coef_list <span class="ot">&lt;-</span> <span class="fu">coef</span>(clf0, <span class="at">s =</span> lambda_1se0)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>coefs_df <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="fu">names</span>(coef_list), <span class="cf">function</span>(class_name) {</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  coefs <span class="ot">&lt;-</span> coef_list[[class_name]]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">predictor =</span> <span class="fu">rownames</span>(coefs),</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">coefficient =</span> <span class="fu">as.numeric</span>(coefs)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(coefficient <span class="sc">!=</span> <span class="dv">0</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(<span class="fu">desc</span>(<span class="fu">abs</span>(coefficient))) <span class="sc">|&gt;</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">tolerance_broader0 =</span> class_name,</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">rank =</span> <span class="fu">row_number</span>()</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(tolerance_broader0, predictor, coefficient, rank)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co"># coefs_df |&gt; write_csv("data/lr-coefs-1se0.csv")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>test_result <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">true_class0 =</span> y_test,</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">pred_class0 =</span> yp_test</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>tolerance_df0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="class-classification-tolerance_broader-based-on-the-measure-with-wiggle-room" class="level3">
+<h3 class="anchored" data-anchor-id="class-classification-tolerance_broader-based-on-the-measure-with-wiggle-room">3-class classification: <code>tolerance_broader</code> based on the measure with wiggle room</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>tolerance_df <span class="ot">&lt;-</span> df_combined <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span><span class="fu">all_of</span>(<span class="fu">c</span>(<span class="st">"study_identification"</span>, <span class="st">"interview_number"</span>, <span class="st">"type_interview"</span>, </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="st">"sample_number"</span>,<span class="st">"interested"</span>, <span class="st">"categorizer"</span>,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="st">"tolerance_group"</span>, <span class="st">"tolerance_broader0"</span>, <span class="st">"tolerance"</span>, <span class="st">"danger"</span>, <span class="st">"danger_broader"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>tolerance_df<span class="sc">$</span>tolerance_broader <span class="ot">&lt;-</span> <span class="fu">factor</span>(tolerance_df<span class="sc">$</span>tolerance_broader, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"more tolerant"</span>,<span class="st">"in between"</span>, <span class="st">"less tolerant"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>tolerance_df <span class="ot">&lt;-</span> tolerance_df <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="sc">-</span>tolerance_broader, <span class="sc">~</span> <span class="fu">as.factor</span>(.)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">545</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>train_indices <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">6433</span>, <span class="at">size =</span> <span class="dv">5146</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>trainset <span class="ot">&lt;-</span> tolerance_df <span class="sc">|&gt;</span> <span class="fu">slice</span>(train_indices)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>testset  <span class="ot">&lt;-</span> tolerance_df <span class="sc">|&gt;</span> <span class="fu">slice</span>(<span class="sc">-</span>train_indices)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>x_train <span class="ot">&lt;-</span> <span class="fu">model.matrix</span>(tolerance_broader<span class="sc">~</span> . <span class="sc">-</span> <span class="dv">1</span>, <span class="at">data =</span> trainset)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>y_train <span class="ot">&lt;-</span> trainset<span class="sc">$</span>tolerance_broader</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>x_test  <span class="ot">&lt;-</span> <span class="fu">model.matrix</span>(tolerance_broader<span class="sc">~</span> . <span class="sc">-</span> <span class="dv">1</span>, <span class="at">data =</span> testset)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>y_test  <span class="ot">&lt;-</span> testset<span class="sc">$</span>tolerance_broader</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>clf <span class="ot">&lt;-</span> <span class="fu">cv.glmnet</span>(</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  x_train, y_train,<span class="at">family =</span> <span class="st">"multinomial"</span>,</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> <span class="dv">1</span>, <span class="at">type.multinomial =</span> <span class="st">"ungrouped"</span>, <span class="at">nfolds =</span> <span class="dv">5</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>lambda_1se <span class="ot">&lt;-</span> clf<span class="sc">$</span>lambda<span class="fl">.1</span>se</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(clf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>yp_train <span class="ot">&lt;-</span> <span class="fu">predict</span>(clf, <span class="at">newx =</span> x_train, <span class="at">s =</span> lambda_1se, <span class="at">type =</span> <span class="st">'class'</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>train_acc <span class="ot">&lt;-</span> <span class="fu">mean</span>(yp_train <span class="sc">==</span> y_train)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>train_acc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>yp_test <span class="ot">&lt;-</span> <span class="fu">predict</span>(clf, <span class="at">newx =</span> x_test, <span class="at">s =</span> lambda_1se, <span class="at">type =</span> <span class="st">'class'</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>test_acc <span class="ot">&lt;-</span> <span class="fu">mean</span>(yp_test <span class="sc">==</span> y_test)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>test_acc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>yp_test <span class="ot">&lt;-</span> <span class="fu">factor</span>(yp_test, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"more tolerant"</span>,<span class="st">"in between"</span>, <span class="st">"less tolerant"</span>))</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>y_test  <span class="ot">&lt;-</span> <span class="fu">factor</span>(y_test, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"more tolerant"</span>,<span class="st">"in between"</span>, <span class="st">"less tolerant"</span>))</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>lr_cm <span class="ot">&lt;-</span> <span class="fu">confusionMatrix</span>(yp_test, y_test)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>lr_cm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>coef_list <span class="ot">&lt;-</span> <span class="fu">coef</span>(clf, <span class="at">s =</span> lambda_1se)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>coefs_df <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="fu">names</span>(coef_list), <span class="cf">function</span>(class_name) {</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  coefs <span class="ot">&lt;-</span> coef_list[[class_name]]</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">predictor =</span> <span class="fu">rownames</span>(coefs),</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">coefficient =</span> <span class="fu">as.numeric</span>(coefs)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(coefficient <span class="sc">!=</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(<span class="fu">desc</span>(<span class="fu">abs</span>(coefficient))) <span class="sc">|&gt;</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">tolerance_broader =</span> class_name,</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">rank =</span> <span class="fu">row_number</span>()</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(tolerance_broader, predictor, coefficient, rank)</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a><span class="co"># coefs_df |&gt; write_csv("lr-coefs-1se.csv")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="are-these-selected-items-capturing-most-of-the-variances" class="level3">
+<h3 class="anchored" data-anchor-id="are-these-selected-items-capturing-most-of-the-variances">Are these selected Items capturing most of the variances?</h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>label_lookup <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'data/gbv_labels.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>tolerance_item_labels <span class="ot">&lt;-</span> label_lookup <span class="sc">|&gt;</span> <span class="fu">filter</span>(v_name <span class="sc">%in%</span> tolernace_items) <span class="sc">|&gt;</span> <span class="fu">pull</span>(v_label)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="truly-learning-dropping-the-15-items-that-contribute-to-the-tolerance-scaling" class="level3">
+<h3 class="anchored" data-anchor-id="truly-learning-dropping-the-15-items-that-contribute-to-the-tolerance-scaling">Truly Learning: dropping the 15 items that contribute to the tolerance scaling</h3>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>tolerance_df3 <span class="ot">&lt;-</span> df_combined <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span><span class="fu">all_of</span>(<span class="fu">c</span>(<span class="st">"study_identification"</span>, <span class="st">"interview_number"</span>, <span class="st">"type_interview"</span>, </span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="st">"sample_number"</span>,<span class="st">"interested"</span>, <span class="st">"categorizer"</span>,</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="st">"tolerance_group"</span>, <span class="st">"tolerance_broader"</span>, <span class="st">"tolerance"</span>, <span class="st">"danger"</span>, <span class="st">"danger_broader"</span>)))</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>tolerance_df3 <span class="ot">&lt;-</span> tolerance_df3 <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span><span class="fu">all_of</span>(tolerance_item_labels))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>tolerance_df3 <span class="sc">|&gt;</span> <span class="fu">filter</span>(leader <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> <span class="fu">count</span>(tolerance_broader0)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>tolerance_df3<span class="sc">$</span>tolerance_broader0 <span class="ot">&lt;-</span> <span class="fu">factor</span>(tolerance_df3<span class="sc">$</span>tolerance_broader0, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"more tolerant"</span>,<span class="st">"in between"</span>, <span class="st">"less tolerant"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>tolerance_df3 <span class="ot">&lt;-</span> tolerance_df3 <span class="sc">|&gt;</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="sc">-</span>tolerance_broader0, <span class="sc">~</span> <span class="fu">as.factor</span>(.)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">5450</span>)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>train_indices <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">6433</span>, <span class="at">size =</span> <span class="dv">5146</span>)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>trainset <span class="ot">&lt;-</span> tolerance_df3 <span class="sc">|&gt;</span> <span class="fu">slice</span>(train_indices)</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>testset  <span class="ot">&lt;-</span> tolerance_df3 <span class="sc">|&gt;</span> <span class="fu">slice</span>(<span class="sc">-</span>train_indices)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>x_train <span class="ot">&lt;-</span> <span class="fu">model.matrix</span>(tolerance_broader0<span class="sc">~</span> . <span class="sc">-</span> <span class="dv">1</span>, <span class="at">data =</span> trainset)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>y_train <span class="ot">&lt;-</span> trainset<span class="sc">$</span>tolerance_broader0</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>x_test  <span class="ot">&lt;-</span> <span class="fu">model.matrix</span>(tolerance_broader0<span class="sc">~</span> . <span class="sc">-</span> <span class="dv">1</span>, <span class="at">data =</span> testset)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>y_test  <span class="ot">&lt;-</span> testset<span class="sc">$</span>tolerance_broader0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>clf3 <span class="ot">&lt;-</span> <span class="fu">cv.glmnet</span>(</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  x_train, y_train, <span class="at">family =</span> <span class="st">"multinomial"</span>,</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">type.multinomial =</span> <span class="st">"ungrouped"</span>,<span class="at">nfolds =</span> <span class="dv">5</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>lambda_1se3 <span class="ot">&lt;-</span> clf3<span class="sc">$</span>lambda<span class="fl">.1</span>se</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>lambda_1se3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(clf3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>yp_train <span class="ot">&lt;-</span> <span class="fu">predict</span>(clf3, <span class="at">newx =</span> x_train, <span class="at">s =</span> lambda_1se3, <span class="at">type =</span> <span class="st">'class'</span>)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>train_acc <span class="ot">&lt;-</span> <span class="fu">mean</span>(yp_train <span class="sc">==</span> y_train)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>train_acc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>yp_test <span class="ot">&lt;-</span> <span class="fu">predict</span>(clf3, <span class="at">newx =</span> x_test, <span class="at">s =</span> lambda_1se3, <span class="at">type =</span> <span class="st">'class'</span>)</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>test_acc <span class="ot">&lt;-</span> <span class="fu">mean</span>(yp_test <span class="sc">==</span> y_test)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>test_acc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>yp_test <span class="ot">&lt;-</span> <span class="fu">factor</span>(yp_test, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"more tolerant"</span>,<span class="st">"in between"</span>, <span class="st">"less tolerant"</span>))</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>y_test  <span class="ot">&lt;-</span> <span class="fu">factor</span>(y_test, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"more tolerant"</span>,<span class="st">"in between"</span>, <span class="st">"less tolerant"</span>))</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>lr_cm0 <span class="ot">&lt;-</span> <span class="fu">confusionMatrix</span>(yp_test, y_test)</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>lr_cm0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="acquired-the-class-specific-variables-and-their-coefficients" class="level3">
+<h3 class="anchored" data-anchor-id="acquired-the-class-specific-variables-and-their-coefficients">Acquired the class specific variables and their coefficients</h3>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>coef_list <span class="ot">&lt;-</span> <span class="fu">coef</span>(clf3, <span class="at">s =</span> lambda_1se3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>coefs_df <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="fu">names</span>(coef_list), <span class="cf">function</span>(class_name) {</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  coefs <span class="ot">&lt;-</span> coef_list[[class_name]]</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">predictor =</span> <span class="fu">rownames</span>(coefs),</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">coefficient =</span> <span class="fu">as.numeric</span>(coefs)</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(coefficient <span class="sc">!=</span> <span class="dv">0</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(<span class="fu">desc</span>(<span class="fu">abs</span>(coefficient))) <span class="sc">|&gt;</span></span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>      <span class="at">tolerance_broader0 =</span> class_name,</span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">rank =</span> <span class="fu">row_number</span>()</span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(tolerance_broader0, predictor, coefficient, rank)</span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a><span class="co"># coefs_df |&gt; write_csv("data/lr-coefs-1se3-elastic.csv")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>coefs_df <span class="sc">|&gt;</span> <span class="fu">count</span>(predictor)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  toler_rigid_tb
+X-squared = 491.09, df = 10, p-value &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>            
+                  agree   disagree  dont know
+  tolerance0  3.6776281 -5.3964437  1.1128421
+  tolerance1 -2.3955483 -1.0211719 10.7874512
+  tolerance2  4.5040579 -6.1915000  0.3030713
+  tolerance3  2.7420911 -2.5744267 -2.8481376
+  tolerance4 -0.6175252  2.2641002 -3.6331099
+  tolerance5 -7.2561266 11.9240239 -5.4354457</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  toler_danger_tb
+X-squared = 410.67, df = 25, p-value &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>            
+                  danger0      danger1      danger2      danger3      danger4
+  tolerance0 -2.970715176 -2.658964979 -2.459910036  0.974739884  2.152232514
+  tolerance1 -4.609232171 -1.006527133  4.547776892 -1.482352369  0.006717332
+  tolerance2 -3.631408736 -5.657972356  0.475321324  2.009535358  1.330107400
+  tolerance3 -0.858497500 -0.790142288 -1.598983893  2.256620306  1.165660786
+  tolerance4  0.394465523  0.926642029 -0.167803951  0.370962087 -0.093407449
+  tolerance5 10.328080755  8.630383914 -1.058231155 -3.774441827 -3.913075010
+            
+                  danger5
+  tolerance0  4.929822736
+  tolerance1 -0.973974888
+  tolerance2  3.228408105
+  tolerance3 -0.075048875
+  tolerance4 -1.188784303
+  tolerance5 -5.126832308</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="index_files/figure-html/unnamed-chunk-45-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="index_files/figure-html/unnamed-chunk-45-1.png" class="img-fluid figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
+<section id="reflections" class="level3">
+<h3 class="anchored" data-anchor-id="reflections">Reflections</h3>
+</section>
 </section>
 <section id="policy-recommendation" class="level2 unnumbered">
 
 
 </section>
 
-
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Policy Recommendation</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-alfredstepanBoundariesToleration2014" class="csl-entry" role="listitem">
-Alfred Stepan, Charles Taylor. 2014. <em>Boundaries of <span>Toleration</span></em>. 1st ed. Vol. 16. New York: Columbia University Press. <a href="https://doi.org/10.7312/step16566">https://doi.org/10.7312/step16566</a>.
-</div>
-<div id="ref-judtReappraisalsReflectionsForgotten2008" class="csl-entry" role="listitem">
-Judt, Tony. 2008. <em>Reappraisals: <span>Reflections</span> on the <span>Forgotten Twentieth Century</span></em>. William Heinemann.
+<div id="ref-fundfortherepublicCommunismConformityAmp2020" class="csl-entry" role="listitem">
+Fund For The Republic, and Samuel A. Stouffer. 2020. <span>“Communism, <span>Conformity</span> &amp;Amp; <span>Civil Liberties</span>.”</span> Roper Center for Public Opinion Research. <a href="https://doi.org/10.25940/ROPER-31089514">https://doi.org/10.25940/ROPER-31089514</a>.
 </div>
 <div id="ref-stoufferCommunismConformityCivil1992" class="csl-entry" role="listitem">
 Stouffer, Samuel A. 1992. <span>“Communism, <span>Conformity</span>, and <span>Civil Liberties Study</span>, 1954.”</span> <span>Inter-university Consortium for Political and Social Research</span>. <a href="https://doi.org/10.3886/ICPSR07202.v2">https://doi.org/10.3886/ICPSR07202.v2</a>.
 </div>
-<div id="ref-MismeasureMan" class="csl-entry" role="listitem">
-<span>“The <span>Mismeasure</span> of <span>Man</span>.”</span> n.d. https://wwnorton.com/books/The-Mismeasure-of-Man/. Accessed May 3, 2025.
+<div id="ref-stouffer1955communism" class="csl-entry" role="listitem">
+Stouffer, Samuel Andrew. 1955. <em>Communism, Conformity, and Civil Liberties: <span>A</span> Cross-Section of the Nation Speaks Its Mind</em>. Transaction Publishers.
 </div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>not to mention when the state itseld is persecuting and demonstrating intolerance, how can they expect the community to own that quality<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>bbc<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p><span class="citation" data-cites="alfredstepanBoundariesToleration2014">Alfred Stepan (<a href="#ref-alfredstepanBoundariesToleration2014" role="doc-biblioref">2014</a>)</span>, pp.3-4, we understanding of the argument for how essential is it for us to understand ‘concept and practice of toleration’ in short is that the word today, 2014? there are still situations that we need law, policy and education at least restrain constitutional intoleration and intolerance in society<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main>
+<div id="ref-tesslerSocialScienceResearch2022" class="csl-entry" role="listitem">
+Tessler, Mark. 2022. <em>Social <span>Science Research</span> in the <span>Arab World</span> and <span>Beyond</span>: <span>A Guide</span> for <span>Students</span>, <span>Instructors</span> and <span>Researchers</span></em>. Springer Nature.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
