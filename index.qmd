@@ -23,12 +23,12 @@ This project looked into an attempt in the fifties that set out to measure indiv
 
 ## Introduction
 
-The online poll data library host by Roper Center was where I first came across the Stouffer Study of 1954 *Communism, Conformity, and Civil Liberties: A Cross-Section of the Nation Speaks Its Mind* by Samuel Andrew Stouffer[@fundfortherepublicCommunismConformityAmp2020]And, I gain access to the entire dataset on ICPSR[@stoufferCommunismConformityCivil1992]
+The online poll data library host by Roper Center was where I first came across the Stouffer Study of 1954 *Communism, Conformity, and Civil Liberties: A Cross-Section of the Nation Speaks Its Mind* by Samuel Andrew Stouffer[@fundfortherepublicCommunismConformityAmp2020]And, I gained access to the entire dataset on ICPSR[@stoufferCommunismConformityCivil1992]
 
 
 ![](image/stouffer-cover.png){width=50%}
 
-I found Stouffer's attempt in the fifties to design public opion polls and, construct an innovative way of measuring the latent properties tolerance and fear in at the individual level very interesting. The tolerance scale and the perception of internal communist danger scale are not included in the data, thus a major part of this project involved returning these two target variables in order to complete the picture and reproduce that basis on which Stouffer built his arguments. I learned much from this practice of reading and researching that past effort into conceptualizing and operationalizing tolerance and fear, and got my hands dirty to really apply those framings and methods to the data. It gave me a chance to reflect on the many artistic and arbitrary decisions that the researcher made throughout this data analysis process.
+I found Stouffer's attempt in the fifties to design public opion polls and, construct an innovative way of measuring the latent properties tolerance and fear at the individual level very interesting. The tolerance scale and the perception of internal communist danger scale are not included in the data, thus a major part of this project involved returning these two target variables in order to complete the picture and reproduce that basis on which Stouffer built his arguments. I learned much from this practice of reading and researching that past effort into conceptualizing and operationalizing tolerance and fear, and got my hands dirty to really apply those framings and methods to the data. It gave me a chance to reflect on the many artistic and arbitrary decisions that the researcher made throughout this data analysis process.
 
 ```{r}
 library(tidyverse)
