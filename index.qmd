@@ -36,6 +36,10 @@ library(glmnet)
 library(caret)
 ```
 
+```{r}
+project_dir <- Sys.getenv("QUARTO_PROJECT_DIR")
+data_dir <- file.path(project_dir, "data")
+```
 ## Harvesting from Historical Data Collection Efforts: A More Friendly Format
 
 Complying ICPSR’s redistribution policy, the converted data files are not provided here. Instead, the author provides STATA .do and .dct files, which were constructed based on the reading of the codebook. Please down the the dataset in ASCII format from ICPSR and should be able to apply to decode the .txt files from both samples.[@stoufferCommunismConformityCivil1992]
@@ -57,8 +61,10 @@ The tolerance that Stouffer argued upon.[@stouffer1955communism, pp.262-269]
 1. Cleaning column names and binding the two samples
 ```{r}
 # read the coded csv files for both samples
-public_df <- read_csv('data/converted/coded-public.csv')
-lead_df <- read_csv('data/converted/coded-leader.csv')
+# public_df <- read_csv('data/converted/coded-public.csv')
+# lead_df <- read_csv('data/converted/coded-leader.csv')
+public_df <- read_csv(file.path(data_dir, "converted", "coded-public.csv"))
+lead_df <- read_csv(file.path(data_dir, "converted", "coded-leader.csv"))
 ```
 ```{r}
 # for the variables from 150 on distinguish those from public sample and those from leader sample since they represent different survey questions
@@ -400,7 +406,8 @@ From the conceptual variable tolerance to the operationalized definition of tole
 #### Reliability
 
 ```{r}
-df_combined <- read_csv('data/df-combined.csv')
+# df_combined <- read_csv('data/df-combined.csv')
+df_combined <- read_csv(file.path(data_dir, 'df-combined.csv'))
 ```
 
 ### 3-class classification using the strict measure of tolerance score `tolerance_broader0`
@@ -575,7 +582,8 @@ lambda_seq <- clf$lambda
 
 ```{r}
 lambda_1se <- 0.00391
-lambda_seq <- readRDS("data/clf-lambda-seq.rds")
+# lambda_seq <- readRDS("data/clf-lambda-seq.rds")
+lambda_seq <- readRDS(file.path(data_dir, 'clf-lambda-seq.rds'))
 clf <- glmnet(
   x_train, y_train, family = "multinomial",
   alpha = 1, type.multinomial = "ungrouped",
@@ -628,7 +636,8 @@ coefs_df |> count(predictor, sort = TRUE) |> head(12)
 ### Are these selected Items capturing most of the variances?
 
 ```{r}
-label_lookup <- read_csv('data/gbv_labels.csv')
+# label_lookup <- read_csv('data/gbv_labels.csv')
+label_lookup <- read_csv(file.path(data_dir, 'gbv_labels.csv'))
 ```
 
 ```{r}
@@ -651,7 +660,8 @@ tolerance_items <- c(
 )
 ```
 ```{r}
-label_lookup <- read_csv('data/gbv_labels.csv')
+# label_lookup <- read_csv('data/gbv_labels.csv')
+label_lookup <- read_csv(file.path(data_dir, 'gbv_labels.csv'))
 ```
 
 ```{r}
@@ -715,7 +725,8 @@ lambda_seq3 <- clf3$lambda
 
 ```{r}
 lambda_1se3 <- 0.01726083
-lambda_seq3 <- readRDS("data/clf3-lambda-seq.rds")
+# lambda_seq3 <- readRDS("data/clf3-lambda-seq.rds")
+lambda_seq3 <- readRDS(file.path(data_dir, 'clf3-lambda-seq.rds'))
 clf3 <- glmnet(
   x_train, y_train, family = "multinomial",
   alpha = 1, type.multinomial = "ungrouped",
